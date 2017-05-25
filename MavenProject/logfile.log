@@ -1,0 +1,41 @@
+2017-05-25 12:07:03,058 INFO  [Log] --------Start running [com.nancy.testscripts.SearchAndViewDetail]------------ 
+2017-05-25 12:07:09,324 INFO  [Log] 验证商品名称是否符合search条件要求, Pass 
+2017-05-25 12:07:09,554 INFO  [Log] AddProductQuantity2 
+2017-05-25 12:07:09,555 INFO  [Log] productQuantity:1 
+2017-05-25 12:07:09,555 INFO  [Log] 验证点击商品数量后的加号，显示的商品总数量相应的添加1, Pass 
+2017-05-25 12:07:09,712 INFO  [Log] 验证点击商品数量后的减号，显示的商品总数量相应的减1, Pass 
+2017-05-25 12:07:10,640 INFO  [Log]  
+2017-05-25 12:07:10,641 ERROR [Log] 验证添加商品到购物车成功信息, Fail 
+2017-05-25 12:07:10,642 INFO  [Log] --------End of [com.nancy.testscripts.SearchAndViewDetail]------------ 
+2017-05-25 12:17:30,143 INFO  [Log] --------Start running [com.nancy.testscripts.SearchAndViewDetail]------------ 
+2017-05-25 12:17:35,949 INFO  [Log] 验证商品名称是否符合search条件要求, Pass 
+2017-05-25 12:17:36,185 INFO  [Log] AddProductQuantity2 
+2017-05-25 12:17:36,185 INFO  [Log] productQuantity:1 
+2017-05-25 12:17:36,185 INFO  [Log] 验证点击商品数量后的加号，显示的商品总数量相应的添加1, Pass 
+2017-05-25 12:17:36,333 INFO  [Log] 验证点击商品数量后的减号，显示的商品总数量相应的减1, Pass 
+2017-05-25 12:17:37,265 INFO  [Log] addSuccess:  
+2017-05-25 12:17:37,265 INFO  [Log] addToCartMessage:  
+2017-05-25 12:17:37,267 ERROR [Log] 验证添加商品到购物车成功信息, Fail 
+2017-05-25 12:17:37,267 INFO  [Log] --------End of [com.nancy.testscripts.SearchAndViewDetail]------------ 
+2017-05-25 13:06:51,983 INFO  [Log] --------Start running [com.nancy.testscripts.SearchAndViewDetail]------------ 
+2017-05-25 13:06:57,901 INFO  [Log] 验证商品名称是否符合search条件要求, Pass 
+2017-05-25 13:06:58,146 INFO  [Log] AddProductQuantity2 
+2017-05-25 13:06:58,146 INFO  [Log] productQuantity:1 
+2017-05-25 13:06:58,147 INFO  [Log] 验证点击商品数量后的加号，显示的商品总数量相应的添加1, Pass 
+2017-05-25 13:06:58,308 INFO  [Log] 验证点击商品数量后的减号，显示的商品总数量相应的减1, Pass 
+2017-05-25 13:06:59,412 INFO  [Log] addSuccess:  
+2017-05-25 13:06:59,412 INFO  [Log] addToCartMessage:  
+2017-05-25 13:14:36,095 INFO  [Log] --------Start running [com.nancy.testscripts.SearchAndViewDetail]------------ 
+2017-05-25 13:14:42,177 INFO  [Log] 验证商品名称是否符合search条件要求, Pass 
+2017-05-25 13:14:42,419 INFO  [Log] AddProductQuantity2 
+2017-05-25 13:14:42,419 INFO  [Log] productQuantity:1 
+2017-05-25 13:14:42,420 INFO  [Log] 验证点击商品数量后的加号，显示的商品总数量相应的添加1, Pass 
+2017-05-25 13:14:42,581 INFO  [Log] 验证点击商品数量后的减号，显示的商品总数量相应的减1, Pass 
+2017-05-25 13:14:43,701 INFO  [Log] addSuccess:  
+2017-05-25 13:14:43,702 INFO  [Log] addToCartMessage:  
+2017-05-25 14:18:50,684 INFO  [Log] --------Start running [com.nancy.testscripts.SearchAndViewDetail]------------ 
+2017-05-25 14:18:54,970 INFO  [Log] 验证商品名称是否符合search条件要求, Pass 
+2017-05-25 14:18:55,259 INFO  [Log] AddProductQuantity2 
+2017-05-25 14:18:55,259 INFO  [Log] productQuantity:1 
+2017-05-25 14:18:55,260 INFO  [Log] 验证点击商品数量后的加号，显示的商品总数量相应的添加1, Pass 
+2017-05-25 14:18:55,445 INFO  [Log] 验证点击商品数量后的减号，显示的商品总数量相应的减1, Pass 
