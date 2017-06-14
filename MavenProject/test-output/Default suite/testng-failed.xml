@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.nancy.testscripts.AddressManagement">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="deleteAddress"/>
+          <include name="AddNewAddress"/>
+          <include name="UpdateNewAddress"/>
+        </methods>
+      </class> <!-- com.nancy.testscripts.AddressManagement -->
+      <class name="com.nancy.testscripts.SearchFromMenuCategory">
+        <methods>
+          <include name="SearchFromMenuCategory"/>
+          <include name="AfterTest"/>
+          <include name="BeforeTest"/>
+        </methods>
+      </class> <!-- com.nancy.testscripts.SearchFromMenuCategory -->
+      <class name="com.nancy.testscripts.NewTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="f"/>
+        </methods>
+      </class> <!-- com.nancy.testscripts.NewTest -->
+      <class name="com.nancy.testscripts.RegisterAccount">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="RegisterAccount"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.nancy.testscripts.RegisterAccount -->
+      <class name="com.nancy.testscripts.SearchAndViewDetail">
+        <methods>
+          <include name="AfterTest"/>
+          <include name="SearchAndViewDetail"/>
+          <include name="BeforeTest"/>
+        </methods>
+      </class> <!-- com.nancy.testscripts.SearchAndViewDetail -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -61,6 +61,14 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>src/main/java/testNG.xml</suiteXmlFile>
 					</suiteXmlFiles>
+				<!-- 
+				<properties>
+            <property>
+                <name>listener</name>
+                <value>listeners.SuitListener, listeners.RetryListener</value>
+            </property>
+        </properties>
+				 --> 
 				</configuration>
 			</plugin>
 		</plugins>

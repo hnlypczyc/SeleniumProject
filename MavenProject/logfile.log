@@ -1,41 +1,347 @@
-2017-05-25 12:07:03,058 INFO  [Log] --------Start running [com.nancy.testscripts.SearchAndViewDetail]------------ 
-2017-05-25 12:07:09,324 INFO  [Log] 验证商品名称是否符合search条件要求, Pass 
-2017-05-25 12:07:09,554 INFO  [Log] AddProductQuantity2 
-2017-05-25 12:07:09,555 INFO  [Log] productQuantity:1 
-2017-05-25 12:07:09,555 INFO  [Log] 验证点击商品数量后的加号，显示的商品总数量相应的添加1, Pass 
-2017-05-25 12:07:09,712 INFO  [Log] 验证点击商品数量后的减号，显示的商品总数量相应的减1, Pass 
-2017-05-25 12:07:10,640 INFO  [Log]  
-2017-05-25 12:07:10,641 ERROR [Log] 验证添加商品到购物车成功信息, Fail 
-2017-05-25 12:07:10,642 INFO  [Log] --------End of [com.nancy.testscripts.SearchAndViewDetail]------------ 
-2017-05-25 12:17:30,143 INFO  [Log] --------Start running [com.nancy.testscripts.SearchAndViewDetail]------------ 
-2017-05-25 12:17:35,949 INFO  [Log] 验证商品名称是否符合search条件要求, Pass 
-2017-05-25 12:17:36,185 INFO  [Log] AddProductQuantity2 
-2017-05-25 12:17:36,185 INFO  [Log] productQuantity:1 
-2017-05-25 12:17:36,185 INFO  [Log] 验证点击商品数量后的加号，显示的商品总数量相应的添加1, Pass 
-2017-05-25 12:17:36,333 INFO  [Log] 验证点击商品数量后的减号，显示的商品总数量相应的减1, Pass 
-2017-05-25 12:17:37,265 INFO  [Log] addSuccess:  
-2017-05-25 12:17:37,265 INFO  [Log] addToCartMessage:  
-2017-05-25 12:17:37,267 ERROR [Log] 验证添加商品到购物车成功信息, Fail 
-2017-05-25 12:17:37,267 INFO  [Log] --------End of [com.nancy.testscripts.SearchAndViewDetail]------------ 
-2017-05-25 13:06:51,983 INFO  [Log] --------Start running [com.nancy.testscripts.SearchAndViewDetail]------------ 
-2017-05-25 13:06:57,901 INFO  [Log] 验证商品名称是否符合search条件要求, Pass 
-2017-05-25 13:06:58,146 INFO  [Log] AddProductQuantity2 
-2017-05-25 13:06:58,146 INFO  [Log] productQuantity:1 
-2017-05-25 13:06:58,147 INFO  [Log] 验证点击商品数量后的加号，显示的商品总数量相应的添加1, Pass 
-2017-05-25 13:06:58,308 INFO  [Log] 验证点击商品数量后的减号，显示的商品总数量相应的减1, Pass 
-2017-05-25 13:06:59,412 INFO  [Log] addSuccess:  
-2017-05-25 13:06:59,412 INFO  [Log] addToCartMessage:  
-2017-05-25 13:14:36,095 INFO  [Log] --------Start running [com.nancy.testscripts.SearchAndViewDetail]------------ 
-2017-05-25 13:14:42,177 INFO  [Log] 验证商品名称是否符合search条件要求, Pass 
-2017-05-25 13:14:42,419 INFO  [Log] AddProductQuantity2 
-2017-05-25 13:14:42,419 INFO  [Log] productQuantity:1 
-2017-05-25 13:14:42,420 INFO  [Log] 验证点击商品数量后的加号，显示的商品总数量相应的添加1, Pass 
-2017-05-25 13:14:42,581 INFO  [Log] 验证点击商品数量后的减号，显示的商品总数量相应的减1, Pass 
-2017-05-25 13:14:43,701 INFO  [Log] addSuccess:  
-2017-05-25 13:14:43,702 INFO  [Log] addToCartMessage:  
-2017-05-25 14:18:50,684 INFO  [Log] --------Start running [com.nancy.testscripts.SearchAndViewDetail]------------ 
-2017-05-25 14:18:54,970 INFO  [Log] 验证商品名称是否符合search条件要求, Pass 
-2017-05-25 14:18:55,259 INFO  [Log] AddProductQuantity2 
-2017-05-25 14:18:55,259 INFO  [Log] productQuantity:1 
-2017-05-25 14:18:55,260 INFO  [Log] 验证点击商品数量后的加号，显示的商品总数量相应的添加1, Pass 
-2017-05-25 14:18:55,445 INFO  [Log] 验证点击商品数量后的减号，显示的商品总数量相应的减1, Pass 
+2017-06-09 17:35:09,636 INFO  [Log] --------Start running [Add New Address: HomeAddress]------------ 
+2017-06-09 17:35:16,861 INFO  [Log] startIndex:23 
+2017-06-09 17:35:16,862 INFO  [Log] endIndex:35 
+2017-06-09 17:35:16,862 INFO  [Log] paramterName:$AddressName$ 
+2017-06-09 17:35:16,862 INFO  [Log] paramterValue:HomeAddress 
+2017-06-09 17:35:16,863 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-09 17:35:16,946 ERROR [Log] 验证新加的Address显示在address list里面，Fail！ 
+2017-06-09 17:35:16,946 INFO  [Log] --------End of [Add New Address: HomeAddress]------------ 
+2017-06-09 17:35:16,951 INFO  [Log] take screenshot 
+2017-06-09 17:35:27,069 INFO  [Log] take screenshot 
+2017-06-09 17:40:10,705 INFO  [Log] --------Start running [Add New Address: HomeAddress]------------ 
+2017-06-09 17:40:18,096 INFO  [Log] startIndex:23 
+2017-06-09 17:40:18,096 INFO  [Log] endIndex:35 
+2017-06-09 17:40:18,097 INFO  [Log] paramterName:$AddressName$ 
+2017-06-09 17:40:18,097 INFO  [Log] paramterValue:HomeAddress 
+2017-06-09 17:40:18,097 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-09 17:40:18,168 ERROR [Log] 验证新加的Address显示在address list里面，Fail！ 
+2017-06-09 17:40:18,169 INFO  [Log] --------End of [Add New Address: HomeAddress]------------ 
+2017-06-09 17:40:18,173 INFO  [Log] take screenshot 
+2017-06-09 17:40:18,173 INFO  [Log] aaaa 
+2017-06-09 17:40:28,262 INFO  [Log] take screenshot 
+2017-06-09 17:40:28,262 INFO  [Log] aaaa 
+2017-06-09 17:59:33,140 INFO  [Log] --------Start running [Add New Address: HomeAddress]------------ 
+2017-06-09 17:59:40,500 INFO  [Log] startIndex:23 
+2017-06-09 17:59:40,500 INFO  [Log] endIndex:35 
+2017-06-09 17:59:40,500 INFO  [Log] paramterName:$AddressName$ 
+2017-06-09 17:59:40,501 INFO  [Log] paramterValue:HomeAddress 
+2017-06-09 17:59:40,501 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-09 17:59:40,575 ERROR [Log] 验证新加的Address显示在address list里面，Fail！ 
+2017-06-09 17:59:40,575 INFO  [Log] --------End of [Add New Address: HomeAddress]------------ 
+2017-06-09 17:59:40,578 INFO  [Log] take screenshot 
+2017-06-09 17:59:40,578 INFO  [Log] aaaa 
+2017-06-09 17:59:50,686 INFO  [Log] take screenshot 
+2017-06-09 17:59:50,686 INFO  [Log] aaaa 
+2017-06-09 18:56:19,254 INFO  [Log] --------Start running [Add New Address: HomeAddress]------------ 
+2017-06-09 18:56:26,344 INFO  [Log] startIndex:23 
+2017-06-09 18:56:26,344 INFO  [Log] endIndex:35 
+2017-06-09 18:56:26,345 INFO  [Log] paramterName:$AddressName$ 
+2017-06-09 18:56:26,345 INFO  [Log] paramterValue:HomeAddress 
+2017-06-09 18:56:26,345 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-09 18:56:26,377 INFO  [Log] 验证新加的Address显示在address list里面，Pass！ 
+2017-06-09 18:56:26,377 INFO  [Log] --------End of [Add New Address: HomeAddress]------------ 
+2017-06-12 10:49:18,850 INFO  [Log] --------Start running [Add New Address: HomeAddress]------------ 
+2017-06-12 10:49:24,262 INFO  [Log] startIndex:23 
+2017-06-12 10:49:24,263 INFO  [Log] endIndex:35 
+2017-06-12 10:49:24,263 INFO  [Log] paramterName:$AddressName$ 
+2017-06-12 10:49:24,263 INFO  [Log] paramterValue:HomeAddress 
+2017-06-12 10:49:24,263 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-12 10:49:24,423 ERROR [Log] 验证新加的Address显示在address list里面，Fail！ 
+2017-06-12 10:49:24,423 INFO  [Log] --------End of [Add New Address: HomeAddress]------------ 
+2017-06-12 10:49:24,426 INFO  [Log] take screenshot 
+2017-06-12 10:49:24,426 INFO  [Log] aaaa 
+2017-06-12 10:49:34,662 INFO  [Log] take screenshot 
+2017-06-12 10:49:34,662 INFO  [Log] aaaa 
+2017-06-12 20:42:03,012 INFO  [Log] --------Start running [Add New Address: HomeAddress]------------ 
+2017-06-12 20:42:13,584 INFO  [Log] startIndex:23 
+2017-06-12 20:42:13,585 INFO  [Log] endIndex:35 
+2017-06-12 20:42:13,585 INFO  [Log] paramterName:$AddressName$ 
+2017-06-12 20:42:13,585 INFO  [Log] paramterValue:HomeAddress 
+2017-06-12 20:42:13,585 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-12 20:42:13,795 ERROR [Log] 验证新加的Address显示在address list里面，Fail！ 
+2017-06-12 20:42:13,795 INFO  [Log] --------End of [Add New Address: HomeAddress]------------ 
+2017-06-12 20:42:13,822 INFO  [Log] take screenshot 
+2017-06-12 20:42:13,822 INFO  [Log] aaaa 
+2017-06-12 20:42:14,308 INFO  [Log] bbbb 
+2017-06-12 20:42:14,318 INFO  [Log] dddd 
+2017-06-12 20:42:14,319 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-12 20:42:14,320 INFO  [Log] newFileName:2017_06_12_20_42_14\AddNewAddress 
+2017-06-12 20:42:14,436 INFO  [Log] take screenshot 
+2017-06-12 20:42:14,436 INFO  [Log] aaaa 
+2017-06-12 20:42:14,900 INFO  [Log] bbbb 
+2017-06-12 20:42:14,900 INFO  [Log] dddd 
+2017-06-12 20:42:14,901 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-12 20:42:14,901 INFO  [Log] newFileName:2017_06_12_20_42_14\AddNewAddress 
+2017-06-12 20:47:21,537 INFO  [Log] --------Start running [Add New Address: HomeAddress]------------ 
+2017-06-12 20:47:30,479 INFO  [Log] startIndex:23 
+2017-06-12 20:47:30,479 INFO  [Log] endIndex:35 
+2017-06-12 20:47:30,479 INFO  [Log] paramterName:$AddressName$ 
+2017-06-12 20:47:30,480 INFO  [Log] paramterValue:HomeAddress 
+2017-06-12 20:47:30,480 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-12 20:47:30,582 ERROR [Log] 验证新加的Address显示在address list里面，Fail！ 
+2017-06-12 20:47:30,583 INFO  [Log] --------End of [Add New Address: HomeAddress]------------ 
+2017-06-12 20:47:30,586 INFO  [Log] take screenshot 
+2017-06-12 20:47:30,586 INFO  [Log] aaaa 
+2017-06-12 20:47:40,711 INFO  [Log] take screenshot 
+2017-06-12 20:47:40,712 INFO  [Log] aaaa 
+2017-06-12 21:11:32,672 INFO  [Log] --------Start running [Add New Address: HomeAddress]------------ 
+2017-06-12 21:11:41,305 INFO  [Log] startIndex:23 
+2017-06-12 21:11:41,305 INFO  [Log] endIndex:35 
+2017-06-12 21:11:41,305 INFO  [Log] paramterName:$AddressName$ 
+2017-06-12 21:11:41,305 INFO  [Log] paramterValue:HomeAddress 
+2017-06-12 21:11:41,305 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-12 21:11:41,373 ERROR [Log] 验证新加的Address显示在address list里面，Fail！ 
+2017-06-12 21:11:41,373 INFO  [Log] --------End of [Add New Address: HomeAddress]------------ 
+2017-06-12 21:11:41,377 INFO  [Log] take screenshot 
+2017-06-12 21:11:41,377 INFO  [Log] aaaa 
+2017-06-12 21:11:41,666 INFO  [Log] bbbb 
+2017-06-12 21:11:41,679 INFO  [Log] dddd 
+2017-06-12 21:11:41,681 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-12 21:11:41,681 INFO  [Log] newFileName:2017_06_12_21_11_41\AddNewAddress 
+2017-06-12 21:11:41,771 INFO  [Log] take screenshot 
+2017-06-12 21:11:41,771 INFO  [Log] aaaa 
+2017-06-12 21:11:41,994 INFO  [Log] bbbb 
+2017-06-12 21:11:41,994 INFO  [Log] dddd 
+2017-06-12 21:11:41,995 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-12 21:11:41,995 INFO  [Log] newFileName:2017_06_12_21_11_41\AddNewAddress 
+2017-06-12 21:16:14,958 INFO  [Log] --------Start running [Add New Address: HomeAddress]------------ 
+2017-06-12 21:16:22,853 INFO  [Log] startIndex:23 
+2017-06-12 21:16:22,853 INFO  [Log] endIndex:35 
+2017-06-12 21:16:22,854 INFO  [Log] paramterName:$AddressName$ 
+2017-06-12 21:16:22,854 INFO  [Log] paramterValue:HomeAddress 
+2017-06-12 21:16:22,854 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-12 21:16:22,929 ERROR [Log] 验证新加的Address显示在address list里面，Fail！ 
+2017-06-12 21:16:22,929 INFO  [Log] --------End of [Add New Address: HomeAddress]------------ 
+2017-06-12 21:16:22,934 INFO  [Log] take screenshot 
+2017-06-12 21:16:22,934 INFO  [Log] aaaa 
+2017-06-12 21:16:23,224 INFO  [Log] bbbb 
+2017-06-12 21:16:23,233 INFO  [Log] dddd 
+2017-06-12 21:16:23,234 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-12 21:16:23,234 INFO  [Log] newFileName:2017_06_12_21_16_23\AddNewAddress 
+2017-06-12 21:16:23,268 INFO  [Log] take screenshot 
+2017-06-12 21:16:23,268 INFO  [Log] aaaa 
+2017-06-12 21:16:23,490 INFO  [Log] bbbb 
+2017-06-12 21:16:23,490 INFO  [Log] dddd 
+2017-06-12 21:16:23,490 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-12 21:16:23,491 INFO  [Log] newFileName:2017_06_12_21_16_23\AddNewAddress 
+2017-06-14 16:11:18,682 INFO  [Log] --------Start running [Add New Address: HomeAddress]------------ 
+2017-06-14 16:11:25,735 INFO  [Log] startIndex:23 
+2017-06-14 16:11:25,736 INFO  [Log] endIndex:35 
+2017-06-14 16:11:25,736 INFO  [Log] paramterName:$AddressName$ 
+2017-06-14 16:11:25,736 INFO  [Log] paramterValue:HomeAddress 
+2017-06-14 16:11:25,736 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-14 16:11:25,799 ERROR [Log] 验证新加的Address显示在address list里面，Fail！ 
+2017-06-14 16:11:25,800 INFO  [Log] --------End of [Add New Address: HomeAddress]------------ 
+2017-06-14 16:11:25,803 INFO  [Log] take screenshot 
+2017-06-14 16:11:26,051 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 16:11:26,051 INFO  [Log] newFileName:2017_06_14_16_11_26\AddNewAddress 
+2017-06-14 16:11:26,104 INFO  [Log] take screenshot 
+2017-06-14 16:11:26,358 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 16:11:26,359 INFO  [Log] newFileName:2017_06_14_16_11_26\AddNewAddress 
+2017-06-14 16:11:26,384 INFO  [Log] --------Start running [Update Address to HomeAddressUpdate]------------ 
+2017-06-14 16:11:26,384 INFO  [Log] startIndex:23 
+2017-06-14 16:11:26,384 INFO  [Log] endIndex:35 
+2017-06-14 16:11:26,384 INFO  [Log] paramterName:$AddressName$ 
+2017-06-14 16:11:26,384 INFO  [Log] paramterValue:HomeAddress 
+2017-06-14 16:11:26,384 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')]/following::li[@class='address_update']/a[@title='Update'] 
+2017-06-14 16:11:26,429 INFO  [Log] take screenshot 
+2017-06-14 16:11:26,622 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 16:11:26,622 INFO  [Log] newFileName:2017_06_14_16_11_26\UpdateNewAddress 
+2017-06-14 16:11:26,628 INFO  [Log] take screenshot 
+2017-06-14 16:11:26,798 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 16:11:26,798 INFO  [Log] newFileName:2017_06_14_16_11_26\UpdateNewAddress 
+2017-06-14 16:11:26,821 INFO  [Log] --------Start running [Delete Address HomeAddressUpdate]------------ 
+2017-06-14 16:11:26,835 INFO  [Log] startIndex:23 
+2017-06-14 16:11:26,835 INFO  [Log] endIndex:35 
+2017-06-14 16:11:26,835 INFO  [Log] paramterName:$AddressName$ 
+2017-06-14 16:11:26,835 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-14 16:11:26,835 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')]/following::li[@class='address_update']/a[@title='Delete'] 
+2017-06-14 16:11:26,877 INFO  [Log] take screenshot 
+2017-06-14 16:11:27,045 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 16:11:27,045 INFO  [Log] newFileName:2017_06_14_16_11_27\deleteAddress 
+2017-06-14 16:11:27,051 INFO  [Log] take screenshot 
+2017-06-14 16:11:27,253 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 16:11:27,254 INFO  [Log] newFileName:2017_06_14_16_11_27\deleteAddress 
+2017-06-14 16:19:20,799 INFO  [Log] --------Start running [Add New Address: HomeAddress]------------ 
+2017-06-14 16:19:27,677 INFO  [Log] startIndex:23 
+2017-06-14 16:19:27,677 INFO  [Log] endIndex:35 
+2017-06-14 16:19:27,677 INFO  [Log] paramterName:$AddressName$ 
+2017-06-14 16:19:27,677 INFO  [Log] paramterValue:HomeAddress 
+2017-06-14 16:19:27,678 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-14 16:19:27,737 ERROR [Log] 验证新加的Address显示在address list里面，Fail！ 
+2017-06-14 16:19:27,737 INFO  [Log] --------End of [Add New Address: HomeAddress]------------ 
+2017-06-14 16:19:27,742 INFO  [Log] take screenshot 
+2017-06-14 16:19:28,001 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 16:19:28,002 INFO  [Log] newFileName:2017_06_14_16_19_27\AddNewAddress 
+2017-06-14 16:19:28,043 INFO  [Log] take screenshot 
+2017-06-14 16:19:28,265 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 16:19:28,265 INFO  [Log] newFileName:2017_06_14_16_19_28\AddNewAddress 
+2017-06-14 16:19:28,282 INFO  [Log] --------Start running [Update Address to HomeAddressUpdate]------------ 
+2017-06-14 16:19:28,282 INFO  [Log] startIndex:23 
+2017-06-14 16:19:28,282 INFO  [Log] endIndex:35 
+2017-06-14 16:19:28,282 INFO  [Log] paramterName:$AddressName$ 
+2017-06-14 16:19:28,283 INFO  [Log] paramterValue:HomeAddress 
+2017-06-14 16:19:28,283 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')]/following::li[@class='address_update']/a[@title='Update'] 
+2017-06-14 16:19:28,337 INFO  [Log] take screenshot 
+2017-06-14 16:19:28,521 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 16:19:28,522 INFO  [Log] newFileName:2017_06_14_16_19_28\UpdateNewAddress 
+2017-06-14 16:19:28,527 INFO  [Log] take screenshot 
+2017-06-14 16:19:28,702 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 16:19:28,703 INFO  [Log] newFileName:2017_06_14_16_19_28\UpdateNewAddress 
+2017-06-14 16:19:28,724 INFO  [Log] --------Start running [Delete Address HomeAddressUpdate]------------ 
+2017-06-14 16:19:28,736 INFO  [Log] startIndex:23 
+2017-06-14 16:19:28,737 INFO  [Log] endIndex:35 
+2017-06-14 16:19:28,737 INFO  [Log] paramterName:$AddressName$ 
+2017-06-14 16:19:28,737 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-14 16:19:28,737 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')]/following::li[@class='address_update']/a[@title='Delete'] 
+2017-06-14 16:19:28,785 INFO  [Log] take screenshot 
+2017-06-14 16:19:28,972 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 16:19:28,972 INFO  [Log] newFileName:2017_06_14_16_19_28\deleteAddress 
+2017-06-14 16:19:28,978 INFO  [Log] take screenshot 
+2017-06-14 16:19:29,152 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 16:19:29,152 INFO  [Log] newFileName:2017_06_14_16_19_29\deleteAddress 
+2017-06-14 17:52:07,165 INFO  [Log] --------Start running [Add New Address: HomeAddress]------------ 
+2017-06-14 17:52:15,283 INFO  [Log] startIndex:23 
+2017-06-14 17:52:15,283 INFO  [Log] endIndex:35 
+2017-06-14 17:52:15,283 INFO  [Log] paramterName:$AddressName$ 
+2017-06-14 17:52:15,283 INFO  [Log] paramterValue:HomeAddress 
+2017-06-14 17:52:15,284 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-14 17:52:15,375 ERROR [Log] 验证新加的Address显示在address list里面，Fail！ 
+2017-06-14 17:52:15,376 INFO  [Log] --------End of [Add New Address: HomeAddress]------------ 
+2017-06-14 17:52:15,379 INFO  [Log] take screenshot 
+2017-06-14 17:52:15,693 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 17:52:15,693 INFO  [Log] newFileName:2017_06_14_17_52_15\AddNewAddress 
+2017-06-14 17:52:15,730 INFO  [Log] --------Start running [Update Address to HomeAddressUpdate]------------ 
+2017-06-14 17:52:15,730 INFO  [Log] startIndex:23 
+2017-06-14 17:52:15,731 INFO  [Log] endIndex:35 
+2017-06-14 17:52:15,731 INFO  [Log] paramterName:$AddressName$ 
+2017-06-14 17:52:15,731 INFO  [Log] paramterValue:HomeAddress 
+2017-06-14 17:52:15,731 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')]/following::li[@class='address_update']/a[@title='Update'] 
+2017-06-14 17:52:15,779 INFO  [Log] take screenshot 
+2017-06-14 17:52:15,997 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 17:52:15,997 INFO  [Log] newFileName:2017_06_14_17_52_15\UpdateNewAddress 
+2017-06-14 17:52:16,031 INFO  [Log] --------Start running [Delete Address HomeAddressUpdate]------------ 
+2017-06-14 17:52:16,046 INFO  [Log] startIndex:23 
+2017-06-14 17:52:16,046 INFO  [Log] endIndex:35 
+2017-06-14 17:52:16,046 INFO  [Log] paramterName:$AddressName$ 
+2017-06-14 17:52:16,046 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-14 17:52:16,046 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')]/following::li[@class='address_update']/a[@title='Delete'] 
+2017-06-14 17:52:16,092 INFO  [Log] take screenshot 
+2017-06-14 17:52:16,306 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 17:52:16,306 INFO  [Log] newFileName:2017_06_14_17_52_16\deleteAddress 
+2017-06-14 17:56:37,627 INFO  [Log] --------Start running [Add New Address: HomeAddress]------------ 
+2017-06-14 17:56:47,403 INFO  [Log] startIndex:23 
+2017-06-14 17:56:47,403 INFO  [Log] endIndex:35 
+2017-06-14 17:56:47,403 INFO  [Log] paramterName:$AddressName$ 
+2017-06-14 17:56:47,403 INFO  [Log] paramterValue:HomeAddress 
+2017-06-14 17:56:47,403 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-14 17:56:47,474 ERROR [Log] 验证新加的Address显示在address list里面，Fail！ 
+2017-06-14 17:56:47,474 INFO  [Log] --------End of [Add New Address: HomeAddress]------------ 
+2017-06-14 17:56:47,478 INFO  [Log] take screenshot 
+2017-06-14 17:56:47,757 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 17:56:47,757 INFO  [Log] newFileName:2017_06_14_17_56_47\AddNewAddress 
+2017-06-14 17:56:47,892 INFO  [Log] --------Start running [Update Address to HomeAddressUpdate]------------ 
+2017-06-14 17:56:47,893 INFO  [Log] startIndex:23 
+2017-06-14 17:56:47,893 INFO  [Log] endIndex:35 
+2017-06-14 17:56:47,893 INFO  [Log] paramterName:$AddressName$ 
+2017-06-14 17:56:47,893 INFO  [Log] paramterValue:HomeAddress 
+2017-06-14 17:56:47,893 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')]/following::li[@class='address_update']/a[@title='Update'] 
+2017-06-14 17:56:47,951 INFO  [Log] take screenshot 
+2017-06-14 17:56:48,179 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 17:56:48,179 INFO  [Log] newFileName:2017_06_14_17_56_48\UpdateNewAddress 
+2017-06-14 17:56:48,213 INFO  [Log] --------Start running [Delete Address HomeAddressUpdate]------------ 
+2017-06-14 17:56:48,228 INFO  [Log] startIndex:23 
+2017-06-14 17:56:48,228 INFO  [Log] endIndex:35 
+2017-06-14 17:56:48,228 INFO  [Log] paramterName:$AddressName$ 
+2017-06-14 17:56:48,228 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-14 17:56:48,229 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')]/following::li[@class='address_update']/a[@title='Delete'] 
+2017-06-14 17:56:48,278 INFO  [Log] take screenshot 
+2017-06-14 17:56:48,497 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 17:56:48,497 INFO  [Log] newFileName:2017_06_14_17_56_48\deleteAddress 
+2017-06-14 18:01:17,965 INFO  [Log] --------Start running [Add New Address: HomeAddress]------------ 
+2017-06-14 18:01:26,062 INFO  [Log] startIndex:23 
+2017-06-14 18:01:26,063 INFO  [Log] endIndex:35 
+2017-06-14 18:01:26,063 INFO  [Log] paramterName:$AddressName$ 
+2017-06-14 18:01:26,063 INFO  [Log] paramterValue:HomeAddress 
+2017-06-14 18:01:26,063 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-14 18:01:26,133 ERROR [Log] 验证新加的Address显示在address list里面，Fail！ 
+2017-06-14 18:01:26,133 INFO  [Log] --------End of [Add New Address: HomeAddress]------------ 
+2017-06-14 18:01:26,137 INFO  [Log] take screenshot 
+2017-06-14 18:01:26,409 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 18:01:26,409 INFO  [Log] newFileName:AddNewAddress\2017_06_14_18_01_26 
+2017-06-14 18:01:26,461 INFO  [Log] --------Start running [Update Address to HomeAddressUpdate]------------ 
+2017-06-14 18:01:26,462 INFO  [Log] startIndex:23 
+2017-06-14 18:01:26,462 INFO  [Log] endIndex:35 
+2017-06-14 18:01:26,462 INFO  [Log] paramterName:$AddressName$ 
+2017-06-14 18:01:26,462 INFO  [Log] paramterValue:HomeAddress 
+2017-06-14 18:01:26,462 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')]/following::li[@class='address_update']/a[@title='Update'] 
+2017-06-14 18:01:26,508 INFO  [Log] take screenshot 
+2017-06-14 18:01:26,720 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 18:01:26,721 INFO  [Log] newFileName:UpdateNewAddress\2017_06_14_18_01_26 
+2017-06-14 18:01:26,801 INFO  [Log] --------Start running [Delete Address HomeAddressUpdate]------------ 
+2017-06-14 18:01:26,816 INFO  [Log] startIndex:23 
+2017-06-14 18:01:26,816 INFO  [Log] endIndex:35 
+2017-06-14 18:01:26,816 INFO  [Log] paramterName:$AddressName$ 
+2017-06-14 18:01:26,816 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-14 18:01:26,817 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')]/following::li[@class='address_update']/a[@title='Delete'] 
+2017-06-14 18:01:26,863 INFO  [Log] take screenshot 
+2017-06-14 18:01:27,076 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 18:01:27,076 INFO  [Log] newFileName:deleteAddress\2017_06_14_18_01_27 
+2017-06-14 18:08:41,270 INFO  [Log] --------Start running [Add New Address: HomeAddress]------------ 
+2017-06-14 18:08:49,815 INFO  [Log] startIndex:23 
+2017-06-14 18:08:49,815 INFO  [Log] endIndex:35 
+2017-06-14 18:08:49,816 INFO  [Log] paramterName:$AddressName$ 
+2017-06-14 18:08:49,816 INFO  [Log] paramterValue:HomeAddress 
+2017-06-14 18:08:49,816 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-14 18:08:49,888 ERROR [Log] 验证新加的Address显示在address list里面，Fail！ 
+2017-06-14 18:08:49,889 INFO  [Log] --------End of [Add New Address: HomeAddress]------------ 
+2017-06-14 18:08:49,894 INFO  [Log] take screenshot 
+2017-06-14 18:08:50,190 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 18:08:50,190 INFO  [Log] newFileName:org.testng.internal.TestResult\AddNewAddress_2017_06_14_18_08_50 
+2017-06-14 18:08:50,239 INFO  [Log] --------Start running [Update Address to HomeAddressUpdate]------------ 
+2017-06-14 18:08:50,239 INFO  [Log] startIndex:23 
+2017-06-14 18:08:50,239 INFO  [Log] endIndex:35 
+2017-06-14 18:08:50,239 INFO  [Log] paramterName:$AddressName$ 
+2017-06-14 18:08:50,239 INFO  [Log] paramterValue:HomeAddress 
+2017-06-14 18:08:50,239 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')]/following::li[@class='address_update']/a[@title='Update'] 
+2017-06-14 18:08:50,293 INFO  [Log] take screenshot 
+2017-06-14 18:08:50,513 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 18:08:50,513 INFO  [Log] newFileName:org.testng.internal.TestResult\UpdateNewAddress_2017_06_14_18_08_50 
+2017-06-14 18:08:50,550 INFO  [Log] --------Start running [Delete Address HomeAddressUpdate]------------ 
+2017-06-14 18:08:50,565 INFO  [Log] startIndex:23 
+2017-06-14 18:08:50,565 INFO  [Log] endIndex:35 
+2017-06-14 18:08:50,565 INFO  [Log] paramterName:$AddressName$ 
+2017-06-14 18:08:50,565 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-14 18:08:50,565 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')]/following::li[@class='address_update']/a[@title='Delete'] 
+2017-06-14 18:08:50,617 INFO  [Log] take screenshot 
+2017-06-14 18:08:50,828 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 18:08:50,828 INFO  [Log] newFileName:org.testng.internal.TestResult\deleteAddress_2017_06_14_18_08_50 
+2017-06-14 18:10:51,726 INFO  [Log] --------Start running [Add New Address: HomeAddress]------------ 
+2017-06-14 18:11:01,225 INFO  [Log] startIndex:23 
+2017-06-14 18:11:01,225 INFO  [Log] endIndex:35 
+2017-06-14 18:11:01,225 INFO  [Log] paramterName:$AddressName$ 
+2017-06-14 18:11:01,225 INFO  [Log] paramterValue:HomeAddress 
+2017-06-14 18:11:01,225 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-14 18:11:01,321 ERROR [Log] 验证新加的Address显示在address list里面，Fail！ 
+2017-06-14 18:11:01,321 INFO  [Log] --------End of [Add New Address: HomeAddress]------------ 
+2017-06-14 18:11:01,326 INFO  [Log] take screenshot 
+2017-06-14 18:11:01,648 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 18:11:01,652 INFO  [Log] newFileName:com.nancy.testscripts.AddressManagement\AddNewAddress_2017_06_14_18_11_01 
+2017-06-14 18:11:01,702 INFO  [Log] --------Start running [Update Address to HomeAddressUpdate]------------ 
+2017-06-14 18:11:01,702 INFO  [Log] startIndex:23 
+2017-06-14 18:11:01,702 INFO  [Log] endIndex:35 
+2017-06-14 18:11:01,702 INFO  [Log] paramterName:$AddressName$ 
+2017-06-14 18:11:01,702 INFO  [Log] paramterValue:HomeAddress 
+2017-06-14 18:11:01,703 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')]/following::li[@class='address_update']/a[@title='Update'] 
+2017-06-14 18:11:01,753 INFO  [Log] take screenshot 
+2017-06-14 18:11:01,977 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 18:11:01,978 INFO  [Log] newFileName:com.nancy.testscripts.AddressManagement\UpdateNewAddress_2017_06_14_18_11_01 
+2017-06-14 18:11:02,019 INFO  [Log] --------Start running [Delete Address HomeAddressUpdate]------------ 
+2017-06-14 18:11:02,034 INFO  [Log] startIndex:23 
+2017-06-14 18:11:02,035 INFO  [Log] endIndex:35 
+2017-06-14 18:11:02,035 INFO  [Log] paramterName:$AddressName$ 
+2017-06-14 18:11:02,035 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-14 18:11:02,035 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')]/following::li[@class='address_update']/a[@title='Delete'] 
+2017-06-14 18:11:02,086 INFO  [Log] take screenshot 
+2017-06-14 18:11:02,313 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
+2017-06-14 18:11:02,313 INFO  [Log] newFileName:com.nancy.testscripts.AddressManagement\deleteAddress_2017_06_14_18_11_02 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.nancy.testscripts.AddressManagement">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="deleteAddress" invocation-numbers="0"/>
+          <include name="AddNewAddress" invocation-numbers="0"/>
+          <include name="UpdateNewAddress" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.nancy.testscripts.AddressManagement -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
