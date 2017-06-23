@@ -13,7 +13,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -45,7 +45,24 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
+		<dependency>
+		    <groupId>com.google.inject</groupId>
+		    <artifactId>guice</artifactId>
+		    <version>3.0</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.uncommons</groupId>
+		    <artifactId>reportng</artifactId>
+		    <version>1.1.4</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.velocity</groupId>
+		    <artifactId>velocity</artifactId>
+		    <version>1.7</version>
+		</dependency>
 	</dependencies>
+	
 	<build>
 		<plugins>
 			<plugin>
@@ -56,21 +73,19 @@
 					<encoding>UTF-8</encoding>
 					<inputEncoding>UTF-8</inputEncoding>
 					<outputEncoding>UTF-8</outputEncoding>
-					<argLine>-Xms512m -Xmx1024m -XX:MaxPermSize=128m -ea -Dfile.encoding=UTF-8</argLine>
-					<reportsDirectory>${basedir}/testNG-output</reportsDirectory>
+					<argLine>-Xms512m -Xmx1024m -XX:MaxPermSize=128m -ea
+						-Dfile.encoding=UTF-8</argLine>
+					<reportsDirectory>${basedir}/test-output</reportsDirectory>
 					<suiteXmlFiles>
 						<suiteXmlFile>src/main/java/testNG.xml</suiteXmlFile>
 					</suiteXmlFiles>
-				<!-- 
-				<properties>
-            <property>
-                <name>listener</name>
-                <value>listeners.SuitListener, listeners.RetryListener</value>
-            </property>
-        </properties>
-				 --> 
+					<systemPropertyVariables>
+         			  	<org.uncommons.reportng.escape-output>false</org.uncommons.reportng.escape-output>            
+      			 	</systemPropertyVariables>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+	 
+	
 </project>

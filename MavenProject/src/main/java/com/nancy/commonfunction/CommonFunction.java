@@ -140,6 +140,17 @@ public class CommonFunction {
 				Log.EndTestCase(TestCaseName);
 				Assert.fail(message);
 			}
+			break;
+		case AssertTrue:
+			try{
+				Assert.assertTrue(true);
+				Log.info(message);
+			}catch(AssertionError error){
+				Log.error(message);
+				Log.EndTestCase(TestCaseName);
+				Assert.fail(message);
+			}
+			break;
 		}
 		
 	}

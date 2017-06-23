@@ -167,8 +167,8 @@ public class AddressManagement extends DriverBase{
 	
 	@AfterClass
 	public void afterTest() {
-//		driver.close();
-//		driver.quit();
+		driver.close();
+		driver.quit();
 	}
 
 }

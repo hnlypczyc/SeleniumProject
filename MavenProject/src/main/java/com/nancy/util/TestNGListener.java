@@ -49,7 +49,8 @@ public class TestNGListener extends TestListenerAdapter {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		Reporter.log("<a href='"+NewFile.getAbsolutePath()+"'> ScreenShot of fail step"+"</a>");
+		Reporter.log("<a href="+NewFile.getAbsolutePath()+" target=_blank> ScreenShot of fail step"+"</a>",true);
+//		Reporter.log("<a href=./img/" + imgName + " target=_blank>Failed Screen Shot</a>", true); 
 }
 
 }
