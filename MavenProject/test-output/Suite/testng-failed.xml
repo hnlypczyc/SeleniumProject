@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <parameter name="browser" value="firefox"/>
+  <listeners>
+    <listener class-name="com.nancy.util.TestNGListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.nancy.testscripts.AddMultipleDressToCart">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="AddMultipleDressToCart"/>
+        </methods>
+      </class> <!-- com.nancy.testscripts.AddMultipleDressToCart -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

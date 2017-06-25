@@ -8,24 +8,23 @@ import com.nancy.constants.ProjectConstants;
 
 public class DriverBase {
 	public WebDriver driver;
-	
-	public WebDriver getDriver(){
+
+	public WebDriver getDriver() {
 		return this.driver;
 	}
-	
-	public void setDriver(String driverType){
-		switch (driverType.toLowerCase()){
+
+	public void setDriver(String driverType) {
+		switch (driverType.toLowerCase()) {
 		case "chrome":
 			System.setProperty("webdriver.chrome.driver", ProjectConstants.ChromeDrivePath);
 			driver = new ChromeDriver();
 			break;
 		case "firefox":
-			System.setProperty("webdriver.firefox.marionette",ProjectConstants.FireFoxGeckoDriverPath);
-			 driver=new FirefoxDriver();
+			System.setProperty("webdriver.firefox.marionette", ProjectConstants.FireFoxGeckoDriverPath);
+			driver = new FirefoxDriver();
 			break;
 		}
-		
-		
+
 	}
 
 }

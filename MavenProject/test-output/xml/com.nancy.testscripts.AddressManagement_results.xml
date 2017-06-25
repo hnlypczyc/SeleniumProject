@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="18.393">
+  <properties />
+  
+  
+            <testcase name="AddNewAddress" time="7.941" classname="com.nancy.testscripts.AddressManagement" />
+                <testcase name="UpdateNewAddress" time="5.281" classname="com.nancy.testscripts.AddressManagement" />
+                <testcase name="deleteAddress" time="5.171" classname="com.nancy.testscripts.AddressManagement" />
+      
+</testsuite>

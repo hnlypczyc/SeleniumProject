@@ -8,11 +8,13 @@ import com.nancy.constants.ProjectConstants;
 import com.nancy.util.DriverBase;
 import com.nancy.util.LocatorUtil;
 import com.nancy.util.Log;
+import com.nancy.util.MyReporter;
 import com.nancy.util.TestNGListener;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -33,11 +35,11 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 
 //@Listeners({ TestNGListener.class }) 
-public class AddressManagement extends DriverBase{
-//	public WebDriver driver;
-//	private CommonFunction CommonFunction;
-//	private LocatorUtil LocatorUtil;
-
+public class AddressManagement extends DriverBase {
+	// public WebDriver driver;
+	// private CommonFunction CommonFunction;
+	// private LocatorUtil LocatorUtil;
+	private String currentTestCaseName;
 
 	@DataProvider(name = "AddressName")
 	public Object[][] GetAddressName() {
@@ -50,9 +52,10 @@ public class AddressManagement extends DriverBase{
 
 		return new Object[][] { { "HomeAddressUpdate" } };
 	}
+
 	@Test(dataProvider = "AddressName")
 	public void AddNewAddress(String strAddressName) {
-		Log.StartTestCase("Add New Address: "+strAddressName);
+		MyReporter.StartTestCase("Add New Address: " + strAddressName);
 		CommonFunction.Click(driver, "MyAccountPage.MyAddress.Button");
 		CommonFunction.Click(driver, "MyAddress.AddANewAddress.Button");
 		CommonFunction.Clear(driver, "MyAddress.AddNewAddress.FirstName.Edit");
@@ -73,25 +76,17 @@ public class AddressManagement extends DriverBase{
 		CommonFunction.sendKeys(driver, "MyAddress.AddNewAddress.AddressTitle.Edit", strAddressName);
 		CommonFunction.Click(driver, "MyAddress.AddNewAddress.Save.Button");
 		LocatorUtil.setParameterValue("$AddressName$", strAddressName);
-		
-//		WebDriverWait driverw = new WebDriverWait(driver, 20);
-//				driverw.until().presenceOfElementLocated(LocatorUtil.getLocator("MyAddress.AddressList.AddressTitle.Text")));
-		try {
-			CommonFunction.findElement(driver, "MyAddress.AddressList.AddressTitle.Text");
-			Log.info("验证新加的Address显示在address list里面，Pass！");
-			Log.EndTestCase("Add New Address: "+strAddressName);
-			Assert.assertTrue(true);
-		} catch (NoSuchElementException exception) {
-			Log.error("验证新加的Address显示在address list里面，Fail！");
-			Log.EndTestCase("Add New Address: "+strAddressName);
-			Assert.fail("验证新加的Address显示在address list里面，Fail！");
-		}
 
+		boolean isExist = CommonFunction.IsElementExist(driver, "MyAddress.AddressList.AddressTitle.Text");
+		CommonFunction.createReport(currentTestCaseName, "true", String.valueOf(isExist),
+				"验证新加的Address显示在address list里面");
+
+		MyReporter.EndTestCase("Add New Address: " + strAddressName);
 	}
 
 	@Test(dataProvider = "AddressNameUpdate")
 	public void UpdateNewAddress(String strAddressNameUpdate) {
-		Log.StartTestCase("Update Address to "+strAddressNameUpdate);
+		MyReporter.StartTestCase("Update Address to " + strAddressNameUpdate);
 		CommonFunction.Click(driver, "MyAddress.AddressList.Update.Button");
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		CommonFunction.Clear(driver, "MyAddress.AddNewAddress.FirstName.Edit");
@@ -110,65 +105,50 @@ public class AddressManagement extends DriverBase{
 		CommonFunction.Clear(driver, "MyAddress.AddNewAddress.HomePhone.Edit");
 		CommonFunction.sendKeys(driver, "MyAddress.AddNewAddress.HomePhone.Edit", "9876543210");
 		CommonFunction.Clear(driver, "MyAddress.AddNewAddress.AdditionalInformation.Edit");
-		CommonFunction.sendKeys(driver, "MyAddress.AddNewAddress.AdditionalInformation.Edit", "additional infomation Update");
+		CommonFunction.sendKeys(driver, "MyAddress.AddNewAddress.AdditionalInformation.Edit",
+				"additional infomation Update");
 		CommonFunction.Clear(driver, "MyAddress.AddNewAddress.AddressTitle.Edit");
 		CommonFunction.sendKeys(driver, "MyAddress.AddNewAddress.AddressTitle.Edit", strAddressNameUpdate);
 		CommonFunction.Click(driver, "MyAddress.AddNewAddress.Save.Button");
 		LocatorUtil.setParameterValue("$AddressName$", strAddressNameUpdate);
-		boolean flag =CommonFunction.IsElementExist(driver, "MyAddress.AddressList.AddressTitle.Text");
-		if (flag){
-			Log.info("验证update之后的Address 显示在address list里面，Pass");
-			Log.EndTestCase("Update Address to "+strAddressNameUpdate);
-			Assert.assertTrue(flag);
-		}
-		else{
-				Log.error("验证update之后的Address 显示在address list里面，fail");
-				Log.EndTestCase("Update Address to "+strAddressNameUpdate);
-				Assert.fail("验证update之后的Address 显示在address list里面，Fail");
-			}
-						
-		}
+		boolean flag = CommonFunction.IsElementExist(driver, "MyAddress.AddressList.AddressTitle.Text");
 
-@Test(dataProvider = "AddressNameUpdate")
-	public void deleteAddress(String strAddressNameDelete) throws InterruptedException{
-	Log.StartTestCase("Delete Address "+strAddressNameDelete);
-	LocatorUtil.setParameterValue("$AddressName$", strAddressNameDelete);
-	CommonFunction.Click(driver, "MyAddress.AddressList.Delete.Button");
-	driver.switchTo().alert().accept();
-	Thread.sleep(5000L);
-	boolean isDeleted = CommonFunction.IsElementExist(driver, "MyAddress.AddressList.AddressTitle.Text");
-	if(!isDeleted){
-		Log.info("删除Address:"+strAddressNameDelete+", 验证删除后的address没有显示在页面上，Pass!");
-		Log.EndTestCase("Delete Address "+strAddressNameDelete);
-		Assert.assertTrue(!isDeleted);
-	}
-		else{
-			Log.error("删除Address:"+strAddressNameDelete+", 验证删除后的address没有显示在页面上，Fail!");
-			Log.EndTestCase("Delete Address "+strAddressNameDelete);
-			Assert.fail("删除Address:"+strAddressNameDelete+", 验证删除后的address没有显示在页面上，Fail!");
-		}
+		CommonFunction.createReport(currentTestCaseName, "true", String.valueOf(flag),
+				"验证update之后的Address 显示在address list里面");
+		MyReporter.EndTestCase("Update Address to " + strAddressNameUpdate);
 	}
 
-	
-@BeforeClass
-	public void beforeTest() {
-//		System.setProperty("webdriver.chrome.driver", ProjectConstants.ChromeDrivePath);
-//		driver = new ChromeDriver();
-//		 System.setProperty("webdriver.firefox.marionette",ProjectConstants.FireFoxGeckoDriverPath);
-//		 driver=new FirefoxDriver();
-		this.setDriver("chrome");
+	@Test(dataProvider = "AddressNameUpdate")
+	public void deleteAddress(String strAddressNameDelete) throws InterruptedException {
+		MyReporter.StartTestCase("Delete Address " + strAddressNameDelete);
+		LocatorUtil.setParameterValue("$AddressName$", strAddressNameDelete);
+		CommonFunction.Click(driver, "MyAddress.AddressList.Delete.Button");
+		driver.switchTo().alert().accept();
+		Thread.sleep(5000L);
+		boolean isDeleted = CommonFunction.IsElementExist(driver, "MyAddress.AddressList.AddressTitle.Text");
+
+		CommonFunction.createReport(currentTestCaseName, "false", String.valueOf(isDeleted),
+				"删除Address:" + strAddressNameDelete + ", 验证删除后的address没有显示在页面上");
+		MyReporter.EndTestCase("Delete Address " + strAddressNameDelete);
+	}
+
+	@Parameters("browser")
+	@BeforeClass
+	public void beforeTest(String browser) {
+
+		currentTestCaseName = this.getClass().getSimpleName();
+		this.setDriver(browser);
 		this.driver.get(ProjectConstants.BaseUrl);
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-		LoginAction loginAction = new LoginAction(driver, ProjectConstants.LoginAccount, ProjectConstants.LoginPassword);
+		LoginAction loginAction = new LoginAction(driver, ProjectConstants.LoginAccount,
+				ProjectConstants.LoginPassword);
 		loginAction.doLogin();
 	}
 
-	
-	
 	@AfterClass
 	public void afterTest() {
-		driver.close();
-		driver.quit();
+		// driver.close();
+		// driver.quit();
 	}
 
 }

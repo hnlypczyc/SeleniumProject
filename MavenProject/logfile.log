@@ -793,3 +793,469 @@
 2017-06-16 12:29:52,321 INFO  [Log] take screenshot 
 2017-06-16 12:29:52,521 INFO  [Log] screenShotFolder:C:\Users\zhouyin\workspace\MavenPro\MavenProject\ScreenShotFolder 
 2017-06-16 12:29:52,522 INFO  [Log] newFileName:com.nancy.testscripts.AddressManagement\deleteAddress_2017_06_16_12_29_52 
+2017-06-23 15:04:26,175 INFO  [Log] --------Start running [Add New Address: HomeAddress]------------ 
+2017-06-23 15:04:32,246 INFO  [Log] startIndex:23 
+2017-06-23 15:04:32,246 INFO  [Log] endIndex:35 
+2017-06-23 15:04:32,246 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 15:04:32,246 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 15:04:32,247 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-23 15:04:32,300 ERROR [Log] 验证新加的Address显示在address list里面，Fail！ 
+2017-06-23 15:04:32,300 INFO  [Log] --------End of [Add New Address: HomeAddress]------------ 
+2017-06-23 15:04:32,311 INFO  [Log] take screenshot 
+2017-06-23 15:04:32,460 INFO  [Log] screenShotFolder:D:\Nancy\sources\SeleniumProject\MavenProject\ScreenShotFolder 
+2017-06-23 15:04:32,460 INFO  [Log] newFileName:com.nancy.testscripts.AddressManagement\AddNewAddress_2017_06_23_15_04_32 
+2017-06-23 15:04:32,505 INFO  [Log] --------Start running [Update Address to HomeAddressUpdate]------------ 
+2017-06-23 15:04:32,505 INFO  [Log] startIndex:23 
+2017-06-23 15:04:32,506 INFO  [Log] endIndex:35 
+2017-06-23 15:04:32,506 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 15:04:32,506 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 15:04:32,506 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')]/following::li[@class='address_update']/a[@title='Update'] 
+2017-06-23 15:04:32,547 INFO  [Log] take screenshot 
+2017-06-23 15:04:32,704 INFO  [Log] screenShotFolder:D:\Nancy\sources\SeleniumProject\MavenProject\ScreenShotFolder 
+2017-06-23 15:04:32,704 INFO  [Log] newFileName:com.nancy.testscripts.AddressManagement\UpdateNewAddress_2017_06_23_15_04_32 
+2017-06-23 15:04:32,708 INFO  [Log] --------Start running [Delete Address HomeAddressUpdate]------------ 
+2017-06-23 15:04:32,714 INFO  [Log] startIndex:23 
+2017-06-23 15:04:32,714 INFO  [Log] endIndex:35 
+2017-06-23 15:04:32,714 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 15:04:32,714 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 15:04:32,714 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')]/following::li[@class='address_update']/a[@title='Delete'] 
+2017-06-23 15:04:32,749 INFO  [Log] take screenshot 
+2017-06-23 15:04:32,878 INFO  [Log] screenShotFolder:D:\Nancy\sources\SeleniumProject\MavenProject\ScreenShotFolder 
+2017-06-23 15:04:32,878 INFO  [Log] newFileName:com.nancy.testscripts.AddressManagement\deleteAddress_2017_06_23_15_04_32 
+2017-06-23 15:10:46,627 INFO  [Log] --------Start running [Add New Address: HomeAddress]------------ 
+2017-06-23 15:10:53,333 INFO  [Log] startIndex:23 
+2017-06-23 15:10:53,333 INFO  [Log] endIndex:35 
+2017-06-23 15:10:53,333 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 15:10:53,333 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 15:10:53,333 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-23 15:10:53,396 ERROR [Log] 验证新加的Address显示在address list里面，Fail！ 
+2017-06-23 15:10:53,397 INFO  [Log] --------End of [Add New Address: HomeAddress]------------ 
+2017-06-23 15:10:53,408 INFO  [Log] take screenshot 
+2017-06-23 15:10:53,568 INFO  [Log] screenShotFolder:D:\Nancy\sources\SeleniumProject\MavenProject\ScreenShotFolder 
+2017-06-23 15:10:53,568 INFO  [Log] newFileName:com.nancy.testscripts.AddressManagement\AddNewAddress_2017_06_23_15_10_53 
+2017-06-23 15:10:53,600 INFO  [Log] --------Start running [Update Address to HomeAddressUpdate]------------ 
+2017-06-23 15:10:53,600 INFO  [Log] startIndex:23 
+2017-06-23 15:10:53,600 INFO  [Log] endIndex:35 
+2017-06-23 15:10:53,600 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 15:10:53,600 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 15:10:53,600 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')]/following::li[@class='address_update']/a[@title='Update'] 
+2017-06-23 15:10:53,646 INFO  [Log] take screenshot 
+2017-06-23 15:10:53,847 INFO  [Log] screenShotFolder:D:\Nancy\sources\SeleniumProject\MavenProject\ScreenShotFolder 
+2017-06-23 15:10:53,847 INFO  [Log] newFileName:com.nancy.testscripts.AddressManagement\UpdateNewAddress_2017_06_23_15_10_53 
+2017-06-23 15:10:53,853 INFO  [Log] --------Start running [Delete Address HomeAddressUpdate]------------ 
+2017-06-23 15:10:53,859 INFO  [Log] startIndex:23 
+2017-06-23 15:10:53,859 INFO  [Log] endIndex:35 
+2017-06-23 15:10:53,859 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 15:10:53,859 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 15:10:53,859 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')]/following::li[@class='address_update']/a[@title='Delete'] 
+2017-06-23 15:10:53,885 INFO  [Log] take screenshot 
+2017-06-23 15:10:53,997 INFO  [Log] screenShotFolder:D:\Nancy\sources\SeleniumProject\MavenProject\ScreenShotFolder 
+2017-06-23 15:10:53,997 INFO  [Log] newFileName:com.nancy.testscripts.AddressManagement\deleteAddress_2017_06_23_15_10_53 
+2017-06-23 15:21:01,321 INFO  [Log] --------Start running [Add New Address: HomeAddress]------------ 
+2017-06-23 15:21:08,406 INFO  [Log] startIndex:23 
+2017-06-23 15:21:08,407 INFO  [Log] endIndex:35 
+2017-06-23 15:21:08,407 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 15:21:08,407 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 15:21:08,408 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-23 15:21:08,444 INFO  [Log] 验证新加的Address显示在address list里面，Pass！ 
+2017-06-23 15:21:08,445 INFO  [Log] --------End of [Add New Address: HomeAddress]------------ 
+2017-06-23 15:21:08,448 INFO  [Log] --------Start running [Update Address to HomeAddressUpdate]------------ 
+2017-06-23 15:21:08,448 INFO  [Log] startIndex:23 
+2017-06-23 15:21:08,448 INFO  [Log] endIndex:35 
+2017-06-23 15:21:08,448 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 15:21:08,448 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 15:21:08,448 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')]/following::li[@class='address_update']/a[@title='Update'] 
+2017-06-23 15:21:14,083 INFO  [Log] startIndex:23 
+2017-06-23 15:21:14,083 INFO  [Log] endIndex:35 
+2017-06-23 15:21:14,083 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 15:21:14,083 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 15:21:14,083 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')] 
+2017-06-23 15:21:14,115 INFO  [Log] 验证update之后的Address 显示在address list里面，Pass 
+2017-06-23 15:21:14,115 INFO  [Log] --------End of [Update Address to HomeAddressUpdate]------------ 
+2017-06-23 15:21:14,116 INFO  [Log] --------Start running [Delete Address HomeAddressUpdate]------------ 
+2017-06-23 15:21:14,127 INFO  [Log] startIndex:23 
+2017-06-23 15:21:14,127 INFO  [Log] endIndex:35 
+2017-06-23 15:21:14,127 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 15:21:14,127 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 15:21:14,127 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')]/following::li[@class='address_update']/a[@title='Delete'] 
+2017-06-23 15:21:19,248 INFO  [Log] startIndex:23 
+2017-06-23 15:21:19,248 INFO  [Log] endIndex:35 
+2017-06-23 15:21:19,248 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 15:21:19,248 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 15:21:19,249 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')] 
+2017-06-23 15:21:19,310 INFO  [Log] 删除Address:HomeAddressUpdate, 验证删除后的address没有显示在页面上，Pass! 
+2017-06-23 15:21:19,310 INFO  [Log] --------End of [Delete Address HomeAddressUpdate]------------ 
+2017-06-23 15:56:28,181 INFO  [Log] --------Start running [Add New Address: HomeAddress]------------ 
+2017-06-23 15:56:34,548 INFO  [Log] startIndex:23 
+2017-06-23 15:56:34,548 INFO  [Log] endIndex:35 
+2017-06-23 15:56:34,548 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 15:56:34,548 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 15:56:34,548 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-23 15:56:34,581 INFO  [Log] 验证新加的Address显示在address list里面, Pass！ 
+2017-06-23 15:56:34,582 INFO  [Log] --------Start running [Update Address to HomeAddressUpdate]------------ 
+2017-06-23 15:56:34,582 INFO  [Log] startIndex:23 
+2017-06-23 15:56:34,582 INFO  [Log] endIndex:35 
+2017-06-23 15:56:34,582 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 15:56:34,582 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 15:56:34,582 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')]/following::li[@class='address_update']/a[@title='Update'] 
+2017-06-23 15:56:39,582 INFO  [Log] startIndex:23 
+2017-06-23 15:56:39,582 INFO  [Log] endIndex:35 
+2017-06-23 15:56:39,582 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 15:56:39,582 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 15:56:39,583 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')] 
+2017-06-23 15:56:39,620 INFO  [Log] 验证update之后的Address 显示在address list里面, Pass！ 
+2017-06-23 15:56:39,622 INFO  [Log] --------Start running [Delete Address HomeAddressUpdate]------------ 
+2017-06-23 15:56:39,627 INFO  [Log] startIndex:23 
+2017-06-23 15:56:39,627 INFO  [Log] endIndex:35 
+2017-06-23 15:56:39,627 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 15:56:39,627 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 15:56:39,628 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')]/following::li[@class='address_update']/a[@title='Delete'] 
+2017-06-23 15:56:44,810 INFO  [Log] startIndex:23 
+2017-06-23 15:56:44,810 INFO  [Log] endIndex:35 
+2017-06-23 15:56:44,810 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 15:56:44,810 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 15:56:44,810 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')] 
+2017-06-23 15:56:44,872 INFO  [Log] 删除Address:HomeAddressUpdate, 验证删除后的address没有显示在页面上, Pass！ 
+2017-06-23 16:22:06,397 INFO  [Log] startIndex:23 
+2017-06-23 16:22:06,398 INFO  [Log] endIndex:35 
+2017-06-23 16:22:06,398 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:22:06,399 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 16:22:06,399 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-23 16:22:06,433 INFO  [Log] 验证新加的Address显示在address list里面, Pass！ 
+2017-06-23 16:22:06,434 INFO  [Log] startIndex:23 
+2017-06-23 16:22:06,434 INFO  [Log] endIndex:35 
+2017-06-23 16:22:06,434 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:22:06,434 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 16:22:06,434 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')]/following::li[@class='address_update']/a[@title='Update'] 
+2017-06-23 16:22:11,927 INFO  [Log] startIndex:23 
+2017-06-23 16:22:11,927 INFO  [Log] endIndex:35 
+2017-06-23 16:22:11,927 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:22:11,927 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 16:22:11,927 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')] 
+2017-06-23 16:22:11,962 INFO  [Log] 验证update之后的Address 显示在address list里面, Pass！ 
+2017-06-23 16:22:11,975 INFO  [Log] startIndex:23 
+2017-06-23 16:22:11,976 INFO  [Log] endIndex:35 
+2017-06-23 16:22:11,976 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:22:11,976 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 16:22:11,976 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')]/following::li[@class='address_update']/a[@title='Delete'] 
+2017-06-23 16:22:17,082 INFO  [Log] startIndex:23 
+2017-06-23 16:22:17,082 INFO  [Log] endIndex:35 
+2017-06-23 16:22:17,082 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:22:17,082 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 16:22:17,082 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')] 
+2017-06-23 16:22:17,148 INFO  [Log] 删除Address:HomeAddressUpdate, 验证删除后的address没有显示在页面上, Pass！ 
+2017-06-23 16:24:49,938 INFO  [Log] startIndex:23 
+2017-06-23 16:24:49,939 INFO  [Log] endIndex:35 
+2017-06-23 16:24:49,939 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:24:49,939 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 16:24:49,940 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-23 16:24:49,973 INFO  [Log] 验证新加的Address显示在address list里面, Pass！ 
+2017-06-23 16:24:49,975 INFO  [Log] startIndex:23 
+2017-06-23 16:24:49,975 INFO  [Log] endIndex:35 
+2017-06-23 16:24:49,975 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:24:49,975 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 16:24:49,976 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')]/following::li[@class='address_update']/a[@title='Update'] 
+2017-06-23 16:24:55,308 INFO  [Log] startIndex:23 
+2017-06-23 16:24:55,308 INFO  [Log] endIndex:35 
+2017-06-23 16:24:55,308 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:24:55,308 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 16:24:55,308 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')] 
+2017-06-23 16:24:55,343 INFO  [Log] 验证update之后的Address 显示在address list里面, Pass！ 
+2017-06-23 16:24:55,352 INFO  [Log] startIndex:23 
+2017-06-23 16:24:55,352 INFO  [Log] endIndex:35 
+2017-06-23 16:24:55,352 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:24:55,352 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 16:24:55,352 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')]/following::li[@class='address_update']/a[@title='Delete'] 
+2017-06-23 16:25:00,479 INFO  [Log] startIndex:23 
+2017-06-23 16:25:00,479 INFO  [Log] endIndex:35 
+2017-06-23 16:25:00,479 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:25:00,479 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 16:25:00,479 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')] 
+2017-06-23 16:25:00,550 INFO  [Log] 删除Address:HomeAddressUpdate, 验证删除后的address没有显示在页面上, Pass！ 
+2017-06-23 16:26:47,487 INFO  [Log] startIndex:23 
+2017-06-23 16:26:47,489 INFO  [Log] endIndex:35 
+2017-06-23 16:26:47,490 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:26:47,490 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 16:26:47,490 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-23 16:26:47,523 INFO  [Log] 验证新加的Address显示在address list里面, Pass！ 
+2017-06-23 16:26:47,527 INFO  [Log] startIndex:23 
+2017-06-23 16:26:47,527 INFO  [Log] endIndex:35 
+2017-06-23 16:26:47,527 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:26:47,527 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 16:26:47,527 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')]/following::li[@class='address_update']/a[@title='Update'] 
+2017-06-23 16:26:53,118 INFO  [Log] startIndex:23 
+2017-06-23 16:26:53,118 INFO  [Log] endIndex:35 
+2017-06-23 16:26:53,118 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:26:53,118 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 16:26:53,118 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')] 
+2017-06-23 16:26:53,147 INFO  [Log] 验证update之后的Address 显示在address list里面, Pass！ 
+2017-06-23 16:26:53,153 INFO  [Log] startIndex:23 
+2017-06-23 16:26:53,154 INFO  [Log] endIndex:35 
+2017-06-23 16:26:53,154 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:26:53,154 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 16:26:53,154 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')]/following::li[@class='address_update']/a[@title='Delete'] 
+2017-06-23 16:26:58,271 INFO  [Log] startIndex:23 
+2017-06-23 16:26:58,271 INFO  [Log] endIndex:35 
+2017-06-23 16:26:58,271 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:26:58,271 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 16:26:58,271 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')] 
+2017-06-23 16:26:58,332 INFO  [Log] 删除Address:HomeAddressUpdate, 验证删除后的address没有显示在页面上, Pass！ 
+2017-06-23 16:28:38,408 INFO  [Log] startIndex:23 
+2017-06-23 16:28:38,409 INFO  [Log] endIndex:35 
+2017-06-23 16:28:38,409 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:28:38,409 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 16:28:38,409 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-23 16:28:38,443 INFO  [Log] 验证新加的Address显示在address list里面, Pass！ 
+2017-06-23 16:28:38,445 INFO  [Log] startIndex:23 
+2017-06-23 16:28:38,445 INFO  [Log] endIndex:35 
+2017-06-23 16:28:38,445 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:28:38,445 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 16:28:38,445 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')]/following::li[@class='address_update']/a[@title='Update'] 
+2017-06-23 16:28:44,039 INFO  [Log] startIndex:23 
+2017-06-23 16:28:44,040 INFO  [Log] endIndex:35 
+2017-06-23 16:28:44,040 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:28:44,040 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 16:28:44,040 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')] 
+2017-06-23 16:28:44,070 INFO  [Log] 验证update之后的Address 显示在address list里面, Pass！ 
+2017-06-23 16:28:44,083 INFO  [Log] startIndex:23 
+2017-06-23 16:28:44,083 INFO  [Log] endIndex:35 
+2017-06-23 16:28:44,083 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:28:44,083 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 16:28:44,083 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')]/following::li[@class='address_update']/a[@title='Delete'] 
+2017-06-23 16:28:49,197 INFO  [Log] startIndex:23 
+2017-06-23 16:28:49,197 INFO  [Log] endIndex:35 
+2017-06-23 16:28:49,197 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:28:49,197 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 16:28:49,197 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')] 
+2017-06-23 16:28:49,268 INFO  [Log] 删除Address:HomeAddressUpdate, 验证删除后的address没有显示在页面上, Pass！ 
+2017-06-23 16:30:39,790 INFO  [Log] startIndex:23 
+2017-06-23 16:30:39,791 INFO  [Log] endIndex:35 
+2017-06-23 16:30:39,791 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:30:39,791 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 16:30:39,791 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-23 16:30:39,831 INFO  [Log] 验证新加的Address显示在address list里面, Pass！ 
+2017-06-23 16:30:39,832 INFO  [Log] startIndex:23 
+2017-06-23 16:30:39,832 INFO  [Log] endIndex:35 
+2017-06-23 16:30:39,832 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:30:39,833 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 16:30:39,833 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')]/following::li[@class='address_update']/a[@title='Update'] 
+2017-06-23 16:30:45,520 INFO  [Log] startIndex:23 
+2017-06-23 16:30:45,520 INFO  [Log] endIndex:35 
+2017-06-23 16:30:45,520 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:30:45,520 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 16:30:45,521 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')] 
+2017-06-23 16:30:49,610 INFO  [Log] take screenshot 
+2017-06-23 16:30:53,660 INFO  [Log] startIndex:23 
+2017-06-23 16:30:53,660 INFO  [Log] endIndex:35 
+2017-06-23 16:30:53,660 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:30:53,661 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 16:30:53,661 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')]/following::li[@class='address_update']/a[@title='Delete'] 
+2017-06-23 16:30:57,695 INFO  [Log] take screenshot 
+2017-06-23 16:32:50,456 INFO  [Log] startIndex:23 
+2017-06-23 16:32:50,456 INFO  [Log] endIndex:35 
+2017-06-23 16:32:50,456 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:32:50,456 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 16:32:50,456 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-23 16:32:50,486 INFO  [Log] 验证新加的Address显示在address list里面, Pass！ 
+2017-06-23 16:32:50,488 INFO  [Log] startIndex:23 
+2017-06-23 16:32:50,488 INFO  [Log] endIndex:35 
+2017-06-23 16:32:50,488 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:32:50,488 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 16:32:50,488 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')]/following::li[@class='address_update']/a[@title='Update'] 
+2017-06-23 16:32:55,841 INFO  [Log] startIndex:23 
+2017-06-23 16:32:55,841 INFO  [Log] endIndex:35 
+2017-06-23 16:32:55,841 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:32:55,841 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 16:32:55,841 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')] 
+2017-06-23 16:32:55,875 INFO  [Log] 验证update之后的Address 显示在address list里面, Pass！ 
+2017-06-23 16:32:55,886 INFO  [Log] startIndex:23 
+2017-06-23 16:32:55,886 INFO  [Log] endIndex:35 
+2017-06-23 16:32:55,886 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:32:55,886 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 16:32:55,886 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')]/following::li[@class='address_update']/a[@title='Delete'] 
+2017-06-23 16:33:01,002 INFO  [Log] startIndex:23 
+2017-06-23 16:33:01,002 INFO  [Log] endIndex:35 
+2017-06-23 16:33:01,002 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:33:01,002 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 16:33:01,002 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')] 
+2017-06-23 16:33:01,057 INFO  [Log] 删除Address:HomeAddressUpdate, 验证删除后的address没有显示在页面上, Pass！ 
+2017-06-23 16:33:48,247 INFO  [Log] startIndex:23 
+2017-06-23 16:33:48,250 INFO  [Log] endIndex:35 
+2017-06-23 16:33:48,251 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:33:48,251 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 16:33:48,251 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-23 16:33:48,342 ERROR [Log] 验证新加的Address显示在address list里面, Fail! the expected Result is true, while the actual result is false 
+2017-06-23 16:33:48,343 INFO  [Log] --------End of [AddressManagement]------------ 
+2017-06-23 16:33:48,351 INFO  [Log] take screenshot 
+2017-06-23 16:33:48,534 INFO  [Log] screenShotFolder:D:\Nancy\sources\SeleniumProject\MavenProject\ScreenShotFolder 
+2017-06-23 16:33:48,534 INFO  [Log] newFileName:com.nancy.testscripts.AddressManagement\AddNewAddress_2017_06_23_16_33_48 
+2017-06-23 16:33:48,570 INFO  [Log] startIndex:23 
+2017-06-23 16:33:48,570 INFO  [Log] endIndex:35 
+2017-06-23 16:33:48,570 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:33:48,570 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 16:33:48,570 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')]/following::li[@class='address_update']/a[@title='Update'] 
+2017-06-23 16:33:48,617 INFO  [Log] take screenshot 
+2017-06-23 16:33:48,772 INFO  [Log] screenShotFolder:D:\Nancy\sources\SeleniumProject\MavenProject\ScreenShotFolder 
+2017-06-23 16:33:48,772 INFO  [Log] newFileName:com.nancy.testscripts.AddressManagement\UpdateNewAddress_2017_06_23_16_33_48 
+2017-06-23 16:33:48,788 INFO  [Log] startIndex:23 
+2017-06-23 16:33:48,788 INFO  [Log] endIndex:35 
+2017-06-23 16:33:48,788 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:33:48,788 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 16:33:48,788 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')]/following::li[@class='address_update']/a[@title='Delete'] 
+2017-06-23 16:33:48,822 INFO  [Log] take screenshot 
+2017-06-23 16:33:48,933 INFO  [Log] screenShotFolder:D:\Nancy\sources\SeleniumProject\MavenProject\ScreenShotFolder 
+2017-06-23 16:33:48,933 INFO  [Log] newFileName:com.nancy.testscripts.AddressManagement\deleteAddress_2017_06_23_16_33_48 
+2017-06-23 16:37:41,304 INFO  [Log] startIndex:23 
+2017-06-23 16:37:41,307 INFO  [Log] endIndex:35 
+2017-06-23 16:37:41,307 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:37:41,307 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 16:37:41,307 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-23 16:37:41,364 ERROR [Log] 验证新加的Address显示在address list里面, Fail! the expected Result is true, while the actual result is false 
+2017-06-23 16:37:41,364 INFO  [Log] --------End of [AddressManagement]------------ 
+2017-06-23 16:37:41,369 INFO  [Log] take screenshot 
+2017-06-23 16:37:41,520 INFO  [Log] screenShotFolder:D:\Nancy\sources\SeleniumProject\MavenProject\ScreenShotFolder 
+2017-06-23 16:37:41,520 INFO  [Log] newFileName:com.nancy.testscripts.AddressManagement\AddNewAddress_2017_06_23_16_37_41 
+2017-06-23 16:37:41,550 INFO  [Log] startIndex:23 
+2017-06-23 16:37:41,550 INFO  [Log] endIndex:35 
+2017-06-23 16:37:41,551 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:37:41,551 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 16:37:41,551 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')]/following::li[@class='address_update']/a[@title='Update'] 
+2017-06-23 16:37:41,587 INFO  [Log] take screenshot 
+2017-06-23 16:37:41,728 INFO  [Log] screenShotFolder:D:\Nancy\sources\SeleniumProject\MavenProject\ScreenShotFolder 
+2017-06-23 16:37:41,729 INFO  [Log] newFileName:com.nancy.testscripts.AddressManagement\UpdateNewAddress_2017_06_23_16_37_41 
+2017-06-23 16:37:41,751 INFO  [Log] startIndex:23 
+2017-06-23 16:37:41,751 INFO  [Log] endIndex:35 
+2017-06-23 16:37:41,751 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 16:37:41,751 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 16:37:41,751 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')]/following::li[@class='address_update']/a[@title='Delete'] 
+2017-06-23 16:37:41,794 INFO  [Log] take screenshot 
+2017-06-23 16:37:41,933 INFO  [Log] screenShotFolder:D:\Nancy\sources\SeleniumProject\MavenProject\ScreenShotFolder 
+2017-06-23 16:37:41,933 INFO  [Log] newFileName:com.nancy.testscripts.AddressManagement\deleteAddress_2017_06_23_16_37_41 
+2017-06-23 17:01:53,669 INFO  [Log] 验证商品名称是否符合search条件要求, Pass！ 
+2017-06-23 17:01:53,843 INFO  [Log] 验证点击商品数量后的加号，显示的商品总数量相应的添加1, Pass！ 
+2017-06-23 17:01:53,965 INFO  [Log] 验证点击商品数量后的减号，显示的商品总数量相应的减1, Pass！ 
+2017-06-23 17:02:04,782 INFO  [Log] 验证添加商品到购物车成功信息, Pass！ 
+2017-06-23 17:02:34,555 INFO  [Log] startIndex:23 
+2017-06-23 17:02:34,556 INFO  [Log] endIndex:35 
+2017-06-23 17:02:34,556 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 17:02:34,557 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 17:02:34,558 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-23 17:02:34,635 ERROR [Log] 验证新加的Address显示在address list里面, Fail! the expected Result is true, while the actual result is false 
+2017-06-23 17:02:34,641 INFO  [Log] take screenshot 
+2017-06-23 17:02:34,812 INFO  [Log] screenShotFolder:D:\Nancy\sources\SeleniumProject\MavenProject\ScreenShotFolder 
+2017-06-23 17:02:34,812 INFO  [Log] newFileName:com.nancy.testscripts.AddressManagement\AddNewAddress_2017_06_23_17_02_34 
+2017-06-23 17:02:34,837 INFO  [Log] startIndex:23 
+2017-06-23 17:02:34,837 INFO  [Log] endIndex:35 
+2017-06-23 17:02:34,837 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 17:02:34,837 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 17:02:34,837 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')]/following::li[@class='address_update']/a[@title='Update'] 
+2017-06-23 17:02:34,887 INFO  [Log] take screenshot 
+2017-06-23 17:02:35,035 INFO  [Log] screenShotFolder:D:\Nancy\sources\SeleniumProject\MavenProject\ScreenShotFolder 
+2017-06-23 17:02:35,035 INFO  [Log] newFileName:com.nancy.testscripts.AddressManagement\UpdateNewAddress_2017_06_23_17_02_35 
+2017-06-23 17:02:35,053 INFO  [Log] startIndex:23 
+2017-06-23 17:02:35,053 INFO  [Log] endIndex:35 
+2017-06-23 17:02:35,053 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 17:02:35,054 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 17:02:35,054 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')]/following::li[@class='address_update']/a[@title='Delete'] 
+2017-06-23 17:02:35,084 INFO  [Log] take screenshot 
+2017-06-23 17:02:35,206 INFO  [Log] screenShotFolder:D:\Nancy\sources\SeleniumProject\MavenProject\ScreenShotFolder 
+2017-06-23 17:02:35,206 INFO  [Log] newFileName:com.nancy.testscripts.AddressManagement\deleteAddress_2017_06_23_17_02_35 
+2017-06-23 17:37:48,764 INFO  [Log] 验证商品名称是否符合search条件要求, Pass！ 
+2017-06-23 17:37:48,938 INFO  [Log] 验证点击商品数量后的加号，显示的商品总数量相应的添加1, Pass！ 
+2017-06-23 17:37:49,047 INFO  [Log] 验证点击商品数量后的减号，显示的商品总数量相应的减1, Pass！ 
+2017-06-23 17:37:59,748 INFO  [Log] 验证添加商品到购物车成功信息, Pass！ 
+2017-06-23 17:51:20,487 ERROR [Log] 根据DRESSES->Evening Dresses category search后的结果验证, Fail! the expected Result is EVENING DRESSES, while the actual result is null 
+2017-06-23 17:55:38,311 ERROR [Log] 根据DRESSES->Evening Dresses category search后的结果验证, Fail! the expected Result is EVENING DRESSES, while the actual result is null 
+2017-06-23 17:55:54,464 INFO  [Log] 验证商品名称是否符合search条件要求, Pass！ 
+2017-06-23 17:55:54,641 INFO  [Log] 验证点击商品数量后的加号，显示的商品总数量相应的添加1, Pass！ 
+2017-06-23 17:55:54,756 INFO  [Log] 验证点击商品数量后的减号，显示的商品总数量相应的减1, Pass！ 
+2017-06-23 17:56:05,582 INFO  [Log] 验证添加商品到购物车成功信息, Pass！ 
+2017-06-23 17:56:42,824 INFO  [Log] startIndex:23 
+2017-06-23 17:56:42,824 INFO  [Log] endIndex:35 
+2017-06-23 17:56:42,825 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 17:56:42,825 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 17:56:42,825 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-23 17:56:42,905 ERROR [Log] 验证新加的Address显示在address list里面, Fail! the expected Result is true, while the actual result is false 
+2017-06-23 17:56:43,046 INFO  [Log] startIndex:23 
+2017-06-23 17:56:43,047 INFO  [Log] endIndex:35 
+2017-06-23 17:56:43,047 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 17:56:43,047 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 17:56:43,047 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')]/following::li[@class='address_update']/a[@title='Update'] 
+2017-06-23 17:56:43,255 INFO  [Log] startIndex:23 
+2017-06-23 17:56:43,256 INFO  [Log] endIndex:35 
+2017-06-23 17:56:43,256 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 17:56:43,256 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 17:56:43,256 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')]/following::li[@class='address_update']/a[@title='Delete'] 
+2017-06-23 18:01:37,850 ERROR [Log] 根据DRESSES->Evening Dresses category search后的结果验证, Fail! the expected Result is EVENING DRESSES, while the actual result is EVENING DRESSES  
+2017-06-23 18:02:11,948 INFO  [Log] 验证商品名称是否符合search条件要求, Pass！ 
+2017-06-23 18:02:12,135 INFO  [Log] 验证点击商品数量后的加号，显示的商品总数量相应的添加1, Pass！ 
+2017-06-23 18:02:12,264 INFO  [Log] 验证点击商品数量后的减号，显示的商品总数量相应的减1, Pass！ 
+2017-06-23 18:02:23,029 INFO  [Log] 验证添加商品到购物车成功信息, Pass！ 
+2017-06-23 18:02:49,655 INFO  [Log] startIndex:23 
+2017-06-23 18:02:49,655 INFO  [Log] endIndex:35 
+2017-06-23 18:02:49,655 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 18:02:49,655 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 18:02:49,656 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-23 18:02:49,684 INFO  [Log] 验证新加的Address显示在address list里面, Pass！ 
+2017-06-23 18:02:49,686 INFO  [Log] startIndex:23 
+2017-06-23 18:02:49,686 INFO  [Log] endIndex:35 
+2017-06-23 18:02:49,686 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 18:02:49,686 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 18:02:49,686 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')]/following::li[@class='address_update']/a[@title='Update'] 
+2017-06-23 18:02:55,805 INFO  [Log] startIndex:23 
+2017-06-23 18:02:55,805 INFO  [Log] endIndex:35 
+2017-06-23 18:02:55,805 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 18:02:55,805 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 18:02:55,805 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')] 
+2017-06-23 18:02:55,832 INFO  [Log] 验证update之后的Address 显示在address list里面, Pass！ 
+2017-06-23 18:02:55,838 INFO  [Log] startIndex:23 
+2017-06-23 18:02:55,838 INFO  [Log] endIndex:35 
+2017-06-23 18:02:55,838 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 18:02:55,838 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 18:02:55,838 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')]/following::li[@class='address_update']/a[@title='Delete'] 
+2017-06-23 18:03:00,955 INFO  [Log] startIndex:23 
+2017-06-23 18:03:00,955 INFO  [Log] endIndex:35 
+2017-06-23 18:03:00,955 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 18:03:00,955 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 18:03:00,955 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')] 
+2017-06-23 18:03:01,024 INFO  [Log] 删除Address:HomeAddressUpdate, 验证删除后的address没有显示在页面上, Pass！ 
+2017-06-23 18:12:28,288 INFO  [Log] 根据DRESSES->Evening Dresses category search后的结果验证, Pass！ 
+2017-06-23 18:12:31,374 INFO  [Log] 根据WOMEN->BLOUSE category search后的结果验证, Pass！ 
+2017-06-23 18:12:54,825 INFO  [Log] 验证商品名称是否符合search条件要求, Pass！ 
+2017-06-23 18:12:55,022 INFO  [Log] 验证点击商品数量后的加号，显示的商品总数量相应的添加1, Pass！ 
+2017-06-23 18:12:55,146 INFO  [Log] 验证点击商品数量后的减号，显示的商品总数量相应的减1, Pass！ 
+2017-06-23 18:13:05,893 INFO  [Log] 验证添加商品到购物车成功信息, Pass！ 
+2017-06-23 18:13:37,128 INFO  [Log] startIndex:23 
+2017-06-23 18:13:37,129 INFO  [Log] endIndex:35 
+2017-06-23 18:13:37,129 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 18:13:37,129 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 18:13:37,129 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')] 
+2017-06-23 18:13:37,161 INFO  [Log] 验证新加的Address显示在address list里面, Pass！ 
+2017-06-23 18:13:37,162 INFO  [Log] startIndex:23 
+2017-06-23 18:13:37,162 INFO  [Log] endIndex:35 
+2017-06-23 18:13:37,162 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 18:13:37,162 INFO  [Log] paramterValue:HomeAddress 
+2017-06-23 18:13:37,162 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddress')]/following::li[@class='address_update']/a[@title='Update'] 
+2017-06-23 18:13:42,414 INFO  [Log] startIndex:23 
+2017-06-23 18:13:42,414 INFO  [Log] endIndex:35 
+2017-06-23 18:13:42,414 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 18:13:42,414 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 18:13:42,414 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')] 
+2017-06-23 18:13:42,442 INFO  [Log] 验证update之后的Address 显示在address list里面, Pass！ 
+2017-06-23 18:13:42,448 INFO  [Log] startIndex:23 
+2017-06-23 18:13:42,448 INFO  [Log] endIndex:35 
+2017-06-23 18:13:42,448 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 18:13:42,448 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 18:13:42,448 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')]/following::li[@class='address_update']/a[@title='Delete'] 
+2017-06-23 18:13:47,561 INFO  [Log] startIndex:23 
+2017-06-23 18:13:47,561 INFO  [Log] endIndex:35 
+2017-06-23 18:13:47,561 INFO  [Log] paramterName:$AddressName$ 
+2017-06-23 18:13:47,561 INFO  [Log] paramterValue:HomeAddressUpdate 
+2017-06-23 18:13:47,561 INFO  [Log] strLocator:.//h3[contains(text(),'HomeAddressUpdate')] 
+2017-06-23 18:13:47,614 INFO  [Log] 删除Address:HomeAddressUpdate, 验证删除后的address没有显示在页面上, Pass！ 
+2017-06-23 20:22:36,405 ERROR [Log] 商品成功添加到购物车, Fail! the expected Result is There are 1  items in your cart, while the actual result is  
+2017-06-23 20:25:50,181 ERROR [Log] 商品成功添加到购物车, Fail! the expected Result is There is 1  item in your cart, while the actual result is  
+2017-06-23 20:28:14,323 ERROR [Log] 商品成功添加到购物车, Fail! the expected Result is There is 1  item in your cart, while the actual result is  
+2017-06-23 20:35:10,047 ERROR [Log] 商品成功添加到购物车, Fail! the expected Result is 1, while the actual result is  
+2017-06-23 20:37:32,722 ERROR [Log] 商品成功添加到购物车, Fail! the expected Result is 1, while the actual result is  
+2017-06-23 20:45:14,400 ERROR [Log] 商品成功添加到购物车, Fail! the expected Result is 1, while the actual result is  

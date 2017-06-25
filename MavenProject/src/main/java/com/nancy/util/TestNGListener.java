@@ -24,7 +24,7 @@ public class TestNGListener extends TestListenerAdapter {
 	}
 
 	private void takeScreenshot(ITestResult tr) {
-		Log.info("take screenshot");
+		MyReporter.log("Start take screenshot");
 		DriverBase db = (DriverBase) tr.getInstance();
 		String className = tr.getInstanceName();
 		WebDriver wd = db.getDriver();
@@ -39,9 +39,9 @@ public class TestNGListener extends TestListenerAdapter {
 		if (!screenShotFolder.exists()) {
 			screenShotFolder.mkdir();
 		}
-		String newFileName = className + File.separator +testCaseName +"_"+  timeStamp ;
-		Log.info("screenShotFolder:" + screenShotFolder.getAbsolutePath());
-		Log.info("newFileName:" + newFileName);
+		String newFileName = className + File.separator + testCaseName + "_" + timeStamp;
+		MyReporter.log("screenShotFolder:" + screenShotFolder.getAbsolutePath());
+		MyReporter.log("newFileName:" + newFileName);
 		File NewFile = new File(screenShotFolder, newFileName + ".png");
 		try {
 			FileUtils.copyFile(screenFile, NewFile);
@@ -49,8 +49,10 @@ public class TestNGListener extends TestListenerAdapter {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		Reporter.log("<a href="+NewFile.getAbsolutePath()+" target=_blank> ScreenShot of fail step"+"</a>",true);
-//		Reporter.log("<a href=./img/" + imgName + " target=_blank>Failed Screen Shot</a>", true); 
-}
+		MyReporter.log("<a href=" + NewFile.getAbsolutePath()
+				+ " target=_blank style=\"color:red\"> ScreenShot for fail step" + "</a><br>", true);
+		MyReporter.EndTestCase(className);
+	
+	}
 
 }

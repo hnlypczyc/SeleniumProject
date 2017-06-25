@@ -7,8 +7,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 
 import com.nancy.constants.ProjectConstants;
 

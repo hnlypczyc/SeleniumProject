@@ -6,7 +6,7 @@
     <listener class-name="org.uncommons.reportng.HTMLReporter" />
 	<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
   </listeners>
-  
+  <parameter name="browser" value="firefox"></parameter>
 
   
   <test name="Test">
@@ -14,10 +14,15 @@
 
     <!--  
            <class name="com.nancy.testscripts.RegisterAccount"/>
-           <class name="com.nancy.testscripts.SearchAndViewDetail"></class>
-           <class name="com.nancy.testscripts.SearchFromMenuCategory"></class>
-	-->
+	
+		   <class name="com.nancy.testscripts.SearchFromMenuCategory"></class>
+			
+	       <class name="com.nancy.testscripts.SearchAndViewDetail"></class>
+	
            <class name="com.nancy.testscripts.AddressManagement"></class>
+    -->
+           <class name="com.nancy.testscripts.AddMultipleDressToCart"></class>
+           
       
     </classes>
 

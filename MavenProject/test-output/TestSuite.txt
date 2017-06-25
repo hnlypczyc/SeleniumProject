@@ -1,0 +1,67 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 50.704 sec <<< FAILURE!
+beforeClass(com.nancy.testscripts.AddMultipleDressToCart)  Time elapsed: 50.368 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+g bootstrap method startup on screenshots@mozilla.org version 6.6.0
+1498225647321	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1498225647322	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 1.1
+1498225647325	addons.xpi	DEBUG	Calling bootstrap method startup on wx-assistant@mozillaonline.com version 2.0.2
+1498225647328	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1498225647328	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1498225647328	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1498225647328	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1498225647328	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1498225647329	addons.manager	DEBUG	Starting provider: GMPProvider
+1498225647336	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1498225647337	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1498225647337	addons.manager	DEBUG	Starting provider: PluginProvider
+1498225647337	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1498225647338	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1498225647338	addons.manager	DEBUG	Completed startup sequence
+JavaScript error: resource://cpmanager-clv/CCLVData.jsm, line 46: NS_NOINTERFACE: Component returned failure code: 0x80004002 (NS_NOINTERFACE) [nsIFileURL.file]
+1498225648822	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1498225648823	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1498225648823	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1498225648827	DeferredSave.extensions.json	DEBUG	Write succeeded
+1498225648827	DeferredSave.extensions.json	DEBUG	Starting timer
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 46: NS_NOINTERFACE: Component returned failure code: 0x80004002 (NS_NOINTERFACE) [nsIFileURL.file]
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+1498225648939	DeferredSave.extensions.json	DEBUG	Starting write
+1498225649007	addons.webextension.wx-assistant@mozillaonline.com	WARN	Please specify whether you want browser_style or not in your browser_action options.
+1498225649424	addons.repository	DEBUG	No addons.json found.
+1498225649425	DeferredSave.addons.json	DEBUG	Save changes
+1498225649430	DeferredSave.addons.json	DEBUG	Starting timer
+1498225649640	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1498225649640	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1498225649641	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+1498225649739	DeferredSave.addons.json	DEBUG	Starting write
+1498225649844	DeferredSave.extensions.json	DEBUG	Write succeeded
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: http://offlintab.firefoxchina.cn/static/preload.html, line 131: ReferenceError: mozIndexedDB is not defined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+1498225649998	DeferredSave.addons.json	DEBUG	Write succeeded
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-DSMJV8E', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:347)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:116)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:259)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:247)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:242)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:238)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
+	at com.nancy.util.DriverBase.setDriver(DriverBase.java:24)
+	at com.nancy.testscripts.AddMultipleDressToCart.beforeClass(AddMultipleDressToCart.java:49)
+
