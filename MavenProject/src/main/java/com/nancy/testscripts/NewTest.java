@@ -2,11 +2,12 @@ package com.nancy.testscripts;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
+import org.databene.feed4testng.FeedTest;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 
-public class NewTest {
+public class NewTest extends FeedTest {
 	
 	private WebDriver wd;
   @Test

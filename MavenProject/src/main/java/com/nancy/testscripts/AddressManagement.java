@@ -6,6 +6,7 @@ import com.nancy.actions.LoginAction;
 import com.nancy.commonfunction.CommonFunction;
 import com.nancy.constants.ProjectConstants;
 import com.nancy.util.DriverBase;
+import com.nancy.util.ExcelManager;
 import com.nancy.util.LocatorUtil;
 import com.nancy.util.Log;
 import com.nancy.util.MyReporter;
@@ -20,9 +21,11 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Iterator;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.databene.benerator.anno.Source;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -36,15 +39,22 @@ import org.testng.annotations.BeforeClass;
 
 //@Listeners({ TestNGListener.class }) 
 public class AddressManagement extends DriverBase {
-	// public WebDriver driver;
-	// private CommonFunction CommonFunction;
-	// private LocatorUtil LocatorUtil;
-	private String currentTestCaseName;
 
-	@DataProvider(name = "AddressName")
-	public Object[][] GetAddressName() {
+	private String className;
+	private boolean ExecuteFlag;
+	private ExcelManager em;
+	private String testCaseName;
 
-		return new Object[][] { { "HomeAddress" } };
+//	@DataProvider(name = "AddressMangement")
+////	public Object[][] GetAddressName() {
+////
+////		return new Object[][] { { "HomeAddress" ,"HomeAddressUpdate"} ,{ "OfficeAddress" ,"OfficeAddressUpdate"}};
+////	}
+	
+	@DataProvider(name = "AddressMangement")
+	public Iterator<Object[]> getTestData(){
+		System.out.println("getTestData:");
+		return em.getAllTestData(testCaseName);
 	}
 
 	@DataProvider(name = "AddressNameUpdate")
@@ -53,7 +63,17 @@ public class AddressManagement extends DriverBase {
 		return new Object[][] { { "HomeAddressUpdate" } };
 	}
 
-	@Test(dataProvider = "AddressName")
+	@Test(dataProvider = "AddressMangement")
+	// @Test(dataProvider = "feeder")
+	// @Source(".\\src\\test\\resources\\excelFolder\\TestCase.csv")
+
+	public void AddressMangement(String strAddressName, String strAddressNameUpdate) throws InterruptedException {
+		AddNewAddress(strAddressName);
+		UpdateNewAddress(strAddressNameUpdate);
+		deleteAddress(strAddressNameUpdate);
+		CommonFunction.Click(driver, "MyAddress.BackToYourAcount.Button");
+	}
+
 	public void AddNewAddress(String strAddressName) {
 		MyReporter.StartTestCase("Add New Address: " + strAddressName);
 		CommonFunction.Click(driver, "MyAccountPage.MyAddress.Button");
@@ -78,13 +98,12 @@ public class AddressManagement extends DriverBase {
 		LocatorUtil.setParameterValue("$AddressName$", strAddressName);
 
 		boolean isExist = CommonFunction.IsElementExist(driver, "MyAddress.AddressList.AddressTitle.Text");
-		CommonFunction.createReport(currentTestCaseName, "true", String.valueOf(isExist),
-				"验证新加的Address显示在address list里面");
+		CommonFunction.createReport(className, "true", String.valueOf(isExist), "验证新加的Address显示在address list里面");
 
 		MyReporter.EndTestCase("Add New Address: " + strAddressName);
 	}
 
-	@Test(dataProvider = "AddressNameUpdate")
+	// @Test(dataProvider = "AddressNameUpdate")
 	public void UpdateNewAddress(String strAddressNameUpdate) {
 		MyReporter.StartTestCase("Update Address to " + strAddressNameUpdate);
 		CommonFunction.Click(driver, "MyAddress.AddressList.Update.Button");
@@ -113,12 +132,11 @@ public class AddressManagement extends DriverBase {
 		LocatorUtil.setParameterValue("$AddressName$", strAddressNameUpdate);
 		boolean flag = CommonFunction.IsElementExist(driver, "MyAddress.AddressList.AddressTitle.Text");
 
-		CommonFunction.createReport(currentTestCaseName, "true", String.valueOf(flag),
-				"验证update之后的Address 显示在address list里面");
+		CommonFunction.createReport(className, "true", String.valueOf(flag), "验证update之后的Address 显示在address list里面");
 		MyReporter.EndTestCase("Update Address to " + strAddressNameUpdate);
 	}
 
-	@Test(dataProvider = "AddressNameUpdate")
+	// @Test(dataProvider = "AddressNameUpdate")
 	public void deleteAddress(String strAddressNameDelete) throws InterruptedException {
 		MyReporter.StartTestCase("Delete Address " + strAddressNameDelete);
 		LocatorUtil.setParameterValue("$AddressName$", strAddressNameDelete);
@@ -127,25 +145,38 @@ public class AddressManagement extends DriverBase {
 		Thread.sleep(5000L);
 		boolean isDeleted = CommonFunction.IsElementExist(driver, "MyAddress.AddressList.AddressTitle.Text");
 
-		CommonFunction.createReport(currentTestCaseName, "false", String.valueOf(isDeleted),
+		CommonFunction.createReport(className, "false", String.valueOf(isDeleted),
 				"删除Address:" + strAddressNameDelete + ", 验证删除后的address没有显示在页面上");
 		MyReporter.EndTestCase("Delete Address " + strAddressNameDelete);
 	}
 
 	@Parameters("browser")
-	@BeforeClass
+	@BeforeTest
 	public void beforeTest(String browser) {
+		// 1. 获取当前TestCaseName
+		// 2. 判断当前Test是否需要执行
+		// 3. 如果执行，初始化Driver,打开URl，登录操作，以及其他需要调测试方法执行需要进行的准备。
+		// 如果不执行，则跳过当前Test。
+		className = this.getClass().getSimpleName();
+		testCaseName = CommonFunction.getTestCaseNameByClassName(className);
+		em = new ExcelManager(ProjectConstants.testSuiteExcelPath);
+		System.out.println("testCaseName:"+testCaseName);
+//		String executeFlag = em.getTestCaseExecuteFlag("", testCaseName);
+//		if (executeFlag == "y") {
+//			ExecuteFlag = true;
+			this.setDriver(browser);
+			this.driver.get(ProjectConstants.BaseUrl);
+			driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+			LoginAction loginAction = new LoginAction(driver, ProjectConstants.LoginAccount,
+					ProjectConstants.LoginPassword);
+			loginAction.doLogin();
+//		} else {
+//			ExecuteFlag = false;
+//		}
 
-		currentTestCaseName = this.getClass().getSimpleName();
-		this.setDriver(browser);
-		this.driver.get(ProjectConstants.BaseUrl);
-		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-		LoginAction loginAction = new LoginAction(driver, ProjectConstants.LoginAccount,
-				ProjectConstants.LoginPassword);
-		loginAction.doLogin();
 	}
 
-	@AfterClass
+	@AfterTest
 	public void afterTest() {
 		// driver.close();
 		// driver.quit();

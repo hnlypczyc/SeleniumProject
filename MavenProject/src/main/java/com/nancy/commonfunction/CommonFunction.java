@@ -14,6 +14,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -25,6 +26,7 @@ import org.testng.Reporter;
 
 import com.nancy.constants.ProjectConstants;
 import com.nancy.util.AssertType;
+import com.nancy.util.ExcelManager;
 import com.nancy.util.LocatorUtil;
 import com.nancy.util.Log;
 import com.nancy.util.MyReporter;
@@ -80,7 +82,19 @@ public class CommonFunction {
 	public static void Clear(WebDriver wd, String locator) {
 		findElement(wd, locator).clear();
 	}
+	
+	/*
+	 * Scroll down/up to make the webElement into view
+	 */
+	public static void ScrollIntoViewByWebElement(WebDriver wd, WebElement we){
+	((JavascriptExecutor)wd).executeScript("arguments[0].scrollIntoView();", we);
 
+	}
+
+	public static void ScrollIntoViewByLocatorString(WebDriver wd, String locator){
+	((JavascriptExecutor)wd).executeScript("arguments[0].scrollIntoView();",findElement(wd,locator));
+
+	}
 	public static void createReport(String testCaseName, String expectedResult, String actualResult,
 			String checkPoint) {
 		try {
@@ -93,10 +107,19 @@ public class CommonFunction {
 			MyReporter.error(
 					String.format(checkPoint + ", Fail! the expected Result is %s, while the actual result is %s",
 							expectedResult, actualResult));
+			ExcelManager em = new ExcelManager(ProjectConstants.testSuiteExcelPath);
+			em.setExecuteStatusInTestCaseListSheet(testCaseName, "Fail");
+//			em.setExecuteStatusInTestDataSheet(excelRowIndex, "Fail");
 			MyReporter.EndTestCase(testCaseName);
+			
 			Assert.fail(String.format(checkPoint + ", Fail! the expected Result is %s, while the actual result is %s",
 					expectedResult, actualResult));
 
 		}
+	}
+	
+	public static String getTestCaseNameByClassName(String className){
+		int lastDotIndex = className.lastIndexOf(".");
+		return className.substring(lastDotIndex+1,className.length());
 	}
 }

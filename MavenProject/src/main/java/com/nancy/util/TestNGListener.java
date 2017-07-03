@@ -13,6 +13,7 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.TestListenerAdapter;
 
+import com.nancy.constants.ProjectConstants;
 import com.nancy.testscripts.AddressManagement;
 
 public class TestNGListener extends TestListenerAdapter {
@@ -22,7 +23,13 @@ public class TestNGListener extends TestListenerAdapter {
 		super.onTestFailure(tr);
 		takeScreenshot(tr);
 	}
-
+	@Override
+	public void onTestSuccess(ITestResult tr){
+		super.onTestSuccess(tr);
+		ExcelManager em = new ExcelManager(ProjectConstants.testSuiteExcelPath);
+		String testCaseName = tr.getName();
+		em.setExecuteStatusInTestCaseListSheet(testCaseName, "Pass");
+	}
 	private void takeScreenshot(ITestResult tr) {
 		MyReporter.log("Start take screenshot");
 		DriverBase db = (DriverBase) tr.getInstance();
@@ -41,7 +48,7 @@ public class TestNGListener extends TestListenerAdapter {
 		}
 		String newFileName = className + File.separator + testCaseName + "_" + timeStamp;
 		MyReporter.log("screenShotFolder:" + screenShotFolder.getAbsolutePath());
-		MyReporter.log("newFileName:" + newFileName);
+		MyReporter.log("screenShotFolderFileName:" + newFileName);
 		File NewFile = new File(screenShotFolder, newFileName + ".png");
 		try {
 			FileUtils.copyFile(screenFile, NewFile);

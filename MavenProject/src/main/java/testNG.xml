@@ -1,32 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Suite" parallel="false">
-  <listeners>
-    <listener class-name="com.nancy.util.TestNGListener" /> 
-    <listener class-name="org.uncommons.reportng.HTMLReporter" />
-	<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
-  </listeners>
-  <parameter name="browser" value="firefox"></parameter>
+	<listeners>
+		<listener class-name="com.nancy.util.TestNGListener" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<parameter name="browser" value="chrome"></parameter>
+	<test name="Test">
+		<classes>
 
-  
-  <test name="Test">
-    <classes>
+			<!-- <class name="com.nancy.testscripts.RegisterAccount"/> <class name="com.nancy.testscripts.SearchFromMenuCategory"></class> 
+				<class name="com.nancy.testscripts.SearchAndViewDetail"></class> <class name="com.nancy.testscripts.AddMultipleDressToCart"></class> -->
 
-    <!--  
-           <class name="com.nancy.testscripts.RegisterAccount"/>
-	
-		   <class name="com.nancy.testscripts.SearchFromMenuCategory"></class>
-			
-	       <class name="com.nancy.testscripts.SearchAndViewDetail"></class>
-	
-           <class name="com.nancy.testscripts.AddressManagement"></class>
-    -->
-           <class name="com.nancy.testscripts.AddMultipleDressToCart"></class>
-           
-      
-    </classes>
+			<class name="com.nancy.testscripts.AddressManagement"></class>
 
-  </test> <!-- Test -->
-   
+
+		</classes>
+
+	</test>
+<!-- 
+	<test name="RegisterAccount">
+		<classes>
+			<class name="com.nancy.testscripts.RegisterAccount" />
+
+		</classes>
+	</test>
+
+	<test name="SearchFromMenuCategory">
+		<classes>
+			<class name="com.nancy.testscripts.SearchFromMenuCategory" />
+		</classes>
+	</test>
+	<test name="AddMultipleDressToCart">
+		<classes>
+			<class name="com.nancy.testscripts.AddMultipleDressToCart" />
+		</classes>
+	</test>
+ -->
 </suite> <!-- Suite -->
  

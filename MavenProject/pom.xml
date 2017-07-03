@@ -29,10 +29,11 @@
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server -->
 		<dependency>
-		    <groupId>org.seleniumhq.selenium</groupId>
-		    <artifactId>selenium-server</artifactId>
-		    <version>3.4.0</version>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>3.4.0</version>
 		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -47,23 +48,40 @@
 			<version>1.2.17</version>
 		</dependency>
 		<dependency>
-		    <groupId>com.google.inject</groupId>
-		    <artifactId>guice</artifactId>
-		    <version>3.0</version>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>3.0</version>
 		</dependency>
-		
+
 		<dependency>
-		    <groupId>org.uncommons</groupId>
-		    <artifactId>reportng</artifactId>
-		    <version>1.1.4</version>
+			<groupId>org.uncommons</groupId>
+			<artifactId>reportng</artifactId>
+			<version>1.1.4</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.apache.velocity</groupId>
-		    <artifactId>velocity</artifactId>
-		    <version>1.7</version>
+			<groupId>org.apache.velocity</groupId>
+			<artifactId>velocity</artifactId>
+			<version>1.7</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.16</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.14</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.databene</groupId>
+		    <artifactId>feed4testng</artifactId>
+		    <version>0.6.2</version>
+		</dependency>
+
+
 	</dependencies>
-	
+
 	<build>
 		<plugins>
 			<plugin>
@@ -81,12 +99,12 @@
 						<suiteXmlFile>src/main/java/testNG.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<systemPropertyVariables>
-         			  	<org.uncommons.reportng.escape-output>false</org.uncommons.reportng.escape-output>            
-      			 	</systemPropertyVariables>
+						<org.uncommons.reportng.escape-output>false</org.uncommons.reportng.escape-output>
+					</systemPropertyVariables>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-	 
-	
+
+
 </project>
