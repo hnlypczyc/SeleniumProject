@@ -107,8 +107,9 @@ public class CommonFunction {
 			MyReporter.error(
 					String.format(checkPoint + ", Fail! the expected Result is %s, while the actual result is %s",
 							expectedResult, actualResult));
-			ExcelManager em = new ExcelManager(ProjectConstants.testSuiteExcelPath);
-			em.setExecuteStatusInTestCaseListSheet(testCaseName, "Fail");
+//			ExcelManager em = new ExcelManager(ProjectConstants.testSuiteExcelPath);
+//			System.out.println("createReport--------");
+//			em.setExecuteStatusInTestCaseListSheet(testCaseName, "Fail");
 //			em.setExecuteStatusInTestDataSheet(excelRowIndex, "Fail");
 			MyReporter.EndTestCase(testCaseName);
 			

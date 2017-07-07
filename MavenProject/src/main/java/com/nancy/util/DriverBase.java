@@ -3,9 +3,9 @@ package com.nancy.util;
 import org.databene.feed4testng.FeedTest;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.firefox.internal.ProfilesIni;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import com.nancy.constants.ProjectConstants;
 
@@ -20,7 +20,12 @@ public class DriverBase extends FeedTest{
 		switch (driverType.toLowerCase()) {
 		case "chrome":
 			System.setProperty("webdriver.chrome.driver", ProjectConstants.ChromeDrivePath);
-			driver = new ChromeDriver();
+			
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--incognito");
+			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+			driver = new ChromeDriver(capabilities);
 			break;
 		case "firefox":
 			System.setProperty("webdriver.firefox.bin", ProjectConstants.FireFoxPath);

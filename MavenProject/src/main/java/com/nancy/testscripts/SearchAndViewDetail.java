@@ -21,19 +21,23 @@ import org.testng.asserts.Assertion;
 import com.nancy.commonfunction.CommonFunction;
 import com.nancy.constants.ProjectConstants;
 import com.nancy.util.DriverBase;
+import com.nancy.util.ExcelManager;
 import com.nancy.util.LocatorUtil;
 import com.nancy.util.MyReporter;
 
 public class SearchAndViewDetail extends DriverBase {
-
+	private ExcelManager em;
+	private String className;
+	private String testCaseName;
 
 	@DataProvider(name = "SearchProduct")
-	public Object[][] GetSearchProduct() {
-		return new Object[][] { { "dress" } };
+	public Iterator<Object[]> getTestData(){
+		System.out.println("getTestData:");
+		return em.getAllTestData(testCaseName);
 	}
 
 	@Test(dataProvider = "SearchProduct")
-	public void SearchAndViewDetail(String searchProduct) throws Exception {
+	public void SearchAndViewDetail(String rowIndex,String searchProduct) throws Exception {
 		String currentTestCase = this.getClass().getSimpleName();
 
 		MyReporter.StartTestCase(this.getClass().getName());
@@ -83,7 +87,9 @@ public class SearchAndViewDetail extends DriverBase {
 	public void BeforeTest(String browser) {
 		System.setProperty("webdriver.chrome.driver", ProjectConstants.ChromeDrivePath);
 		this.setDriver(browser);
-
+		className= this.getClass().getSimpleName();
+		testCaseName = CommonFunction.getTestCaseNameByClassName(className);
+		em = new ExcelManager(ProjectConstants.testSuiteExcelPath);
 		driver.get(ProjectConstants.BaseUrl);
 	}
 

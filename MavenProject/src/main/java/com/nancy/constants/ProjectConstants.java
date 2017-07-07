@@ -17,6 +17,6 @@ public class ProjectConstants{
 	public static final String testDataSheet="testData";
 	public static final String executeOrNotColumn="ExecuteOrNot";
 	public static final String testCaseNameColumn="TestCaseName";
-	public static final String executeResultColumn = "ExecuteRusult";
+	public static final String executeResultColumn = "ExecuteResult";
 
 }

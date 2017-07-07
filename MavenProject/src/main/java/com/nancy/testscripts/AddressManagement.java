@@ -67,7 +67,7 @@ public class AddressManagement extends DriverBase {
 	// @Test(dataProvider = "feeder")
 	// @Source(".\\src\\test\\resources\\excelFolder\\TestCase.csv")
 
-	public void AddressMangement(String strAddressName, String strAddressNameUpdate) throws InterruptedException {
+	public void AddressManagement(String rowIndex,String strAddressName, String strAddressNameUpdate) throws InterruptedException {
 		AddNewAddress(strAddressName);
 		UpdateNewAddress(strAddressNameUpdate);
 		deleteAddress(strAddressNameUpdate);

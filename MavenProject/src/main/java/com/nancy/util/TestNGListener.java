@@ -19,15 +19,28 @@ import com.nancy.testscripts.AddressManagement;
 public class TestNGListener extends TestListenerAdapter {
 
 	@Override
+	public void onTestSkipped(ITestResult tr){
+		super.onTestSkipped(tr);
+		ExcelManager em = new ExcelManager(ProjectConstants.testSuiteExcelPath);
+		String testCaseName = tr.getName();
+		System.out.println("onTestSuccess->testCaseName:"+testCaseName);
+		em.setExecuteStatusInTestCaseListSheet(testCaseName, "Skip");
+	}
+	@Override
 	public void onTestFailure(ITestResult tr) {
 		super.onTestFailure(tr);
 		takeScreenshot(tr);
+		ExcelManager em = new ExcelManager(ProjectConstants.testSuiteExcelPath);
+		String testCaseName = tr.getName();
+		System.out.println("onTestSuccess->testCaseName:"+testCaseName);
+		em.setExecuteStatusInTestCaseListSheet(testCaseName, "Fail");
 	}
 	@Override
 	public void onTestSuccess(ITestResult tr){
 		super.onTestSuccess(tr);
 		ExcelManager em = new ExcelManager(ProjectConstants.testSuiteExcelPath);
 		String testCaseName = tr.getName();
+		System.out.println("onTestSuccess->testCaseName:"+testCaseName);
 		em.setExecuteStatusInTestCaseListSheet(testCaseName, "Pass");
 	}
 	private void takeScreenshot(ITestResult tr) {

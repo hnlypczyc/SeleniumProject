@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
@@ -33,10 +34,11 @@ public class ExcelManager {
 		if (excelFile.exists()) {
 			try {
 				FileInputStream fis = new FileInputStream(excelFile);
-				String fileExtend = excelPathName.substring(excelPathName.indexOf("."));
-				if (fileExtend == "xls") {
+				String fileExtend = excelPathName.substring(excelPathName.lastIndexOf(".")+1,excelPathName.length());
+				System.out.println("fileExtend:"+ fileExtend);
+				if (excelPathName.endsWith("xls")) {
 					excelWorkBook = new HSSFWorkbook(fis);
-				} else if (fileExtend == "xlsx") {
+				} else if (excelPathName.endsWith("xlsx")) {
 					excelWorkBook = new XSSFWorkbook(fis);
 				} else {
 					MyReporter.error("Invalid file format, here need excel file!");
@@ -95,6 +97,9 @@ public class ExcelManager {
 		String columnName = ProjectConstants.executeResultColumn;
 		int rowIndex = this.getSingleRowIndexByTestCaseName(sheetName, testCaseName);
 		int colIndex = this.getColumnIndex(sheetName, columnName);
+		System.out.println("setExecuteStatusInTestCaseListSheet-》rowIndex：" +rowIndex);
+		System.out.println("setExecuteStatusInTestCaseListSheet-》colIndex：" +colIndex);
+
 		this.setCellData(sheetName, rowIndex, colIndex, value);
 	}
 	public void setExecuteStatusInTestDataSheet(String RowIndex,String Value){
@@ -128,11 +133,15 @@ public class ExcelManager {
 	}
 
 	public String getCellValue(Cell cell) {
-		if (cell.getCellTypeEnum() == CellType.NUMERIC) {
+		switch (cell.getCellTypeEnum()){
+		case NUMERIC:
 			return String.valueOf(cell.getNumericCellValue());
-		} else {
+		case STRING:
 			return cell.getStringCellValue();
-		}
+		default:
+			return "";
+	}
+		
 	}
 
 	public int getSingleRowIndexByTestCaseName(String sheetName, String testCaseName) {
@@ -145,7 +154,7 @@ public class ExcelManager {
 		for (int i = firstRowNum; i <= lastRowNum; i++) {
 			cell = currentSheet.getRow(i).getCell(colIndex);
 			cellValue = getCellValue(cell);
-			if (cellValue == testCaseName) {
+			if (cellValue.equals(testCaseName)) {
 				return i;
 			}
 		}
@@ -155,33 +164,42 @@ public class ExcelManager {
 	public List getAllRowIndexByTestCaseName(String sheetName, String testCaseName){
 		Sheet currentSheet = this.getSheet(ProjectConstants.testDataSheet);
 		int firstRowNum = currentSheet.getFirstRowNum();
+		System.out.println("firstRowNum:"+firstRowNum);
 		int lastRowNum = currentSheet.getLastRowNum();
-		int colIndex = getColumnIndex(ProjectConstants.testCaseListSheet, ProjectConstants.testCaseNameColumn);
+		System.out.println("lastRowNum:"+lastRowNum);
+		int colIndex = getColumnIndex(ProjectConstants.testDataSheet, ProjectConstants.testCaseNameColumn);
+		System.out.println("colIndex:"+colIndex);
 		Cell cell;
 		String cellValue;
 		List rowIndexArr = new ArrayList();
 		for (int i = firstRowNum; i <= lastRowNum; i++) {
+			System.out.println("i:"+i);
 			cell = currentSheet.getRow(i).getCell(colIndex);
 			cellValue = getCellValue(cell);
-			if (cellValue == testCaseName) {
+			if (cellValue.equals(testCaseName)) {
 				rowIndexArr.add(i);
 			}
 		}
+		System.out.println(rowIndexArr);
 		return rowIndexArr;
 	}
 	public int getColumnIndex(String sheetName, String columnName) {
 		Sheet currentSheet = this.getSheet(sheetName);
 		Row row = currentSheet.getRow(0);
 		int lastColumnIndex = row.getLastCellNum();
+		System.out.println("lastColumnIndex:"+lastColumnIndex);
 		Cell cell;
 		String cellValue;
-		for (int i = 0; i <= lastColumnIndex; i++) {
+		for (int i = 0; i <lastColumnIndex; i++) {
 			cell = row.getCell(i);
 			cellValue = getCellValue(cell);
-			if (cellValue.toLowerCase().trim() == columnName) {
+			System.out.println("cellValue"+cellValue);
+			if (cellValue.trim().equals(columnName)) {
+				System.out.println("colindex:"+i);
 				return i;
 			}
 		}
+		MyReporter.error(String.format("Cannot find out the specified column name [%s] in sheet [%s]",columnName,sheetName));
 		return -1;
 	}
 	
@@ -191,21 +209,25 @@ public class ExcelManager {
 		List rowIndexList = this.getAllRowIndexByTestCaseName(sheetName, testCaseName);
 		List<Object[]> testDataList = new ArrayList<Object[]>();
 		int executeFlagColumnIndex =this.getColumnIndex(sheetName, ProjectConstants.executeOrNotColumn);
-		int lastColumnIndex = currentSheet.getRow(0).getLastCellNum();
-		Object field[] = new String[lastColumnIndex+1-3+1];//最后一列+1 （总列数）-3（非测试数据列）+(用于存放rowIndex)
 		for(int i = 0; i<rowIndexList.size();i++){
-			int executeCount=0;
 			int rowIndex = (int)rowIndexList.get(i);
+
+			int lastColumnIndex = currentSheet.getRow(rowIndex).getLastCellNum();
+			System.out.println("getAllTestData->lastColumnIndex:"+lastColumnIndex);
+
+			Object field[] = new String[lastColumnIndex-3+1];//总列数-2（非测试数据列）+(用于存放rowIndex)
+			int executeCount=0;
 			String executeFlag = this.getCellData(sheetName, rowIndex, executeFlagColumnIndex);
-			if(executeFlag.toLowerCase().trim()=="y"){
+			if(executeFlag.toLowerCase().trim().equals("y")){
 				field[0]=String.valueOf(rowIndex);
-				for(int j =3;j<=lastColumnIndex-1;j++){//test data column is from column index 3.
+				for(int j =3;j<=lastColumnIndex-1;j++){//test data column is from column index 3 to last column index -1
 				field[j-2]=this.getCellData(sheetName, rowIndex, j);
 				}
-				testDataList.add(field);
 			}
-			
+			testDataList.add(field);
+			System.out.println("field:"+Arrays.toString(field));
 		}
+		System.out.println("testDataList.size():"+testDataList.size());
 		return testDataList.iterator();
 	}
 }

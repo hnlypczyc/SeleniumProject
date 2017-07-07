@@ -7,7 +7,7 @@
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 	</listeners>
 	<parameter name="browser" value="chrome"></parameter>
-	<test name="Test">
+	<test name="AddressManagement">
 		<classes>
 
 			<!-- <class name="com.nancy.testscripts.RegisterAccount"/> <class name="com.nancy.testscripts.SearchFromMenuCategory"></class> 
@@ -19,7 +19,14 @@
 		</classes>
 
 	</test>
-<!-- 
+	<test name="SearchAndViewDetail">
+		<classes>
+
+				<class name="com.nancy.testscripts.SearchAndViewDetail"></class> 
+
+		</classes>
+
+	</test>
 	<test name="RegisterAccount">
 		<classes>
 			<class name="com.nancy.testscripts.RegisterAccount" />
@@ -37,6 +44,6 @@
 			<class name="com.nancy.testscripts.AddMultipleDressToCart" />
 		</classes>
 	</test>
- -->
+ 
 </suite> <!-- Suite -->
  

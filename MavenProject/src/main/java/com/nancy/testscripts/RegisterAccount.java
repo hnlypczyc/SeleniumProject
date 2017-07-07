@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import com.nancy.commonfunction.CommonFunction;
 import com.nancy.constants.ProjectConstants;
 import com.nancy.util.DriverBase;
+import com.nancy.util.ExcelManager;
 import com.nancy.util.LocatorUtil;
 import com.nancy.util.MyReporter;
 
@@ -12,6 +13,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 
+import java.util.Iterator;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -31,14 +33,17 @@ import org.testng.annotations.BeforeClass;
 
 public class RegisterAccount extends DriverBase{
 	private WebElement webElement;
-
+	private String className;
+	private String testCaseName;
+	private ExcelManager em;
 	@DataProvider(name = "NewEmailAddress")
-	public Object[][] getNewEmailAddress() {
-		return new Object[][] { { "testselenium28@gmail.com" } };
+	public Iterator<Object[]> getTestData(){
+		System.out.println("getTestData:");
+		return em.getAllTestData(testCaseName);
 	}
 
 	@Test(dataProvider = "NewEmailAddress")
-	public void RegisterAccount(String EmailAddress) {
+	public void RegisterAccount(String rowIndex,String EmailAddress) {
 		MyReporter.StartTestCase(this.getClass().getName());
 		// 1.点击Sign in
 		driver.findElement(LocatorUtil.getLocator("HomePage.Signin")).click();
@@ -84,9 +89,9 @@ public class RegisterAccount extends DriverBase{
 		// 点击signout链接登出，用注册的账号重新登录
 		driver.findElement(LocatorUtil.getLocator("MyAccountPage.SignOut.Link")).click();
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-		driver.findElement(LocatorUtil.getLocator("MyReporterinPage.EmailAddress.Edit")).sendKeys(EmailAddress);
-		driver.findElement(LocatorUtil.getLocator("MyReporterinPage.Password.Edit")).sendKeys("123456");
-		driver.findElement(LocatorUtil.getLocator("MyReporterinPage.SignIn.Button")).click();
+		driver.findElement(LocatorUtil.getLocator("MyLoginPage.EmailAddress.Edit")).sendKeys(EmailAddress);
+		driver.findElement(LocatorUtil.getLocator("MyLoginPage.Password.Edit")).sendKeys("123456");
+		driver.findElement(LocatorUtil.getLocator("MyLoginPage.SignIn.Button")).click();
 		String MyReporterinAccount = driver.findElement(LocatorUtil.getLocator("MyAccountPage.AccountName.Link")).getText();
 		CommonFunction.createReport(this.getClass().getName(), "Nancy Zhou", MyReporterinAccount, "比较实际登录名和期望登录名");
 		MyReporter.EndTestCase(this.getClass().getName());
@@ -97,6 +102,10 @@ public class RegisterAccount extends DriverBase{
 	public void beforeTest(String browser) {
 //		System.setProperty("webdriver.chrome.driver", ProjectConstants.ChromeDrivePath);
 		// LocatorUtil = new LocatorUtil(ProjectConstants.ObjectMapPath);
+		className = this.getClass().getSimpleName();
+		testCaseName = CommonFunction.getTestCaseNameByClassName(className);
+		em = new ExcelManager(ProjectConstants.testSuiteExcelPath);
+
 		this.setDriver(browser);
 		driver.get(ProjectConstants.BaseUrl);
 	}
