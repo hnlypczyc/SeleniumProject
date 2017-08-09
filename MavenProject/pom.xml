@@ -90,6 +90,9 @@
 			  <groupId>org.openclover</groupId>
 			  <artifactId>clover-maven-plugin</artifactId> <!-- maven-clover2-plugin for version <= 4.0.6 -->
 			  <version>4.2.0</version>
+			  <configuration>
+				  <generateXml>true</generateXml>
+			  </configuration>
 		      </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
